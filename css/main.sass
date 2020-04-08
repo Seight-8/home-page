@@ -1,0 +1,1203 @@
+@import "mixins"
+*
+    padding: 0
+    margin: 0
+    font-family: Proxima Nova
+
+body
+    background: #F2F6FF
+    a
+        text-decoration: none
+        z-index: 2
+    textarea
+        resize: none
+        outline: none
+    input
+        outline: none
+
+.hot_line
+    color: #fff
+    margin-left: 91px
+    .text_hot_line
+        font-size: 17px
+        line-height: 21px
+    .hot_footer.number_hot_line
+        margin-top: 13px
+    .number_hot_line
+        font-size: 23px
+        line-height: 28px
+        margin-top: 3px
+    .btn_hot_line
+        padding: 8px 33px 8px 42px
+        background: #E22D2D
+        border-radius: 7px
+        outline: none
+        border: none
+        margin-top: 6px
+        color: #fff
+        font-size: 16px
+        line-height: 19px
+        cursor: pointer
+    .btn_hot_line:hover
+        color: #4372FF
+    .btn_hot_line:active
+        background: #bb2525
+    .links
+        display: flex
+        margin-top: 30px
+        .link
+            width: 35px
+            height: 35px
+            border-radius: 35px
+            background: #5A5A5A
+            position: relative
+            margin-right: 15px
+            img
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate( -50%, -50%)
+        .link:hover
+            background: linear-gradient(173.9deg, #46DEFF 4.64%, #6F87EF 126.97%)
+
+.head
+    width: 100%
+    height: 250px
+    background: url(../img/head_background.png) no-repeat
+    -moz-background-size: cover
+    -webkit-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    .phons_background
+        width: 100%
+        height: 60px
+        background: #4573E8
+        display: flex
+        justify-content: center
+        .phons
+            height: 32px
+            width: 1110px
+            margin-top: 15px 
+            display: flex
+            justify-content: center
+            .free_line
+                width: 155px
+                height: 30px
+                font-size: 13px
+                line-height: 15px
+                color: #fff
+            .phon_1
+                @include phons(289px, 17px)
+                .block_1
+                    @include blocks(145px)
+                .numder_1
+                    @include numbers (5px)
+            .phon_2
+                @include phons(321px, 17px)
+                .block_2
+                    @include blocks(180px)
+                .numder_2
+                    @include numbers (7px)
+            .phon_3
+                @include phons(283px, 28px)
+                .block_3
+                    @include blocks(140px)
+                .numder_3
+                    @include numbers (8px)
+        .blocks_text
+            font-size: 15px
+            line-height: 18px
+            color: #fff
+            position: relative
+            left: 11px
+            top: 6px
+    .head_filling
+        display: flex
+        justify-content: center
+        margin-top: 36px
+        .logo
+            margin-top: 2px
+            margin-left: -13px
+        .icons
+            margin-top: 1px
+            margin-left: -1px
+    .nav
+        display: flex
+        justify-content: center
+        margin-top: 27px
+        .nav_bar
+            height: 61px
+            width: 1110px
+            background: #fff
+            border-radius: 10px
+            margin-top: -60px
+            display: flex
+            .nav_section
+                margin: 21px 13px
+                font-size: 17px
+                line-height: 21px
+                color: #222222
+                z-index: 10
+                cursor: pointer
+                .border_bot
+                    position: relative
+                    margin-bottom: 0px
+                    height: 2px
+                    width: 58%
+                    background: #4372FF
+                    margin-left: 25%
+                    margin-top: 17px
+                    display: none
+                img
+                    margin-left: 7px
+                .ellipse_1
+                    position: absolute
+                    margin-top: -28px
+                    margin-left: 88px
+                    span
+                        position: relative
+                        top: -4px
+                        left: -10px
+                        font-size: 11px
+                        line-height: 13px
+                        color: #fff
+                .ellipse_2
+                    position: absolute
+                    margin-top: -28px
+                    margin-left: 237px
+                    span
+                        position: relative
+                        top: -4px
+                        left: -13px
+                        font-size: 11px
+                        line-height: 13px
+                        color: #fff
+            .nav_section:hover
+                color: #4372FF
+                .border_bot
+                    display: block
+        .nav_bar_shadow
+            width: 1091px
+            height: 60px
+            background: #FFFFFF
+            box-shadow: 0px 9px 20px rgba(120, 158, 255, 0.3)
+            border-radius: 10px
+            margin-left: 9.5px
+            .dividing_lines
+                width: 775px
+                height: 21px
+                position: absolute
+                margin: 19px 121.5px
+                display: flex
+                .division_line
+                    height: 20px
+                    border: 0.5px solid #BDCFFF
+                .line_1
+                    margin-right: 130px
+                .line_2
+                    margin-right: 273px
+                .line_3
+                    margin-right: 115px
+                .line_4
+                    margin-right: 166px
+                .line_5
+                    margin-right: 86px
+
+.content
+    width: 1110px
+    margin: auto
+    margin-top: 75px
+    display: flex
+    .block_left
+        width: 780px
+        margin-right: 30px
+        .top_text
+            margin-left: -1px
+            height: 87px
+            width: 781px
+            font-size: 16px
+            line-height: 23px
+            color: #2D2D2D
+        .form_question
+            margin-top: 34px
+            background: url(../img/form_question.png)
+            width: 745px
+            height: 376px
+            color: #fff
+            padding-top: 29px
+            padding-left: 35px
+            .heading_form_question
+                font-size: 30px
+                line-height: 37px
+            .subtitle_form_question
+                font-size: 14px
+                line-height: 18px
+                width: 395px
+                margin-top: 6px
+            .text_area_form_question
+                margin-top: 13px
+                width: 395px
+                height: 115px
+                background: rgba(255, 255, 255, 0.2)
+                border: 1px solid rgba(255, 255, 255, 0.4)
+                box-sizing: border-box
+                border-radius: 6px
+                padding: 19px 14px
+                color: #F8F9FF
+                font-size: 15px
+                line-height: 21px
+            .text_area_form_question::-webkit-input-placeholder 
+                color: #F8F9FF
+                opacity: 0.5
+            .text_area_form_question:-moz-placeholder 
+                color: #F8F9FF
+                opacity: 0.5
+            .text_area_form_question::-moz-placeholder
+                color: #F8F9FF
+                opacity: 0.5
+            .text_area_form_question:-ms-input-placeholde
+                color: #F8F9FF 
+                opacity: 0.5 
+            .text_area_form_question::placeholder
+                color: #F8F9FF
+                opacity: 0.5
+            .phone_form_question
+                margin-top: 15px
+                width: 396px
+                height: 45px
+                padding: 13px 14px
+                color: #F8F9FF
+            .btn_form_question
+                margin-top: 25px
+                padding: 11px 33px 12px 27px
+                background: #fff
+                border-radius: 7px
+                color: #4A75FE
+                font-size: 18px
+                line-height: 22px
+                outline: none
+                border: none
+            .btn_form_question:hover
+                opacity: 0.8
+            .btn_form_question:active
+                opacity: 1
+            .free_form_question
+                margin: -30px 229px
+                font-size: 15px
+                line-height: 18px
+                opacity: 0.5
+
+        .questions_hour
+            margin-top: 60px
+            .heading_questions_hour
+                font-size: 30px
+                line-height: 37px
+                color: #2B2B2B
+                display: flex
+                margin-bottom: 30px
+                .item_2_questions_hour
+                    margin-top: -2px
+                    margin-left: 11px
+            .quest_block
+                width: 710px
+                background: #FFFFFF
+                box-shadow: 0px 4px 10px #E3E8FB
+                border-radius: 8px
+                margin-bottom: 20px
+                padding: 18px 35px 19px 35px
+                .heading_quest_block
+                    font-size: 18px
+                    line-height: 22px
+                    color: #222222
+                    cursor: pointer
+                .heading_quest_block:hover
+                    text-decoration: underline
+                .location_quest_block
+                    display: flex
+                    margin-top: 11px
+                    font-size: 15px
+                    line-height: 18px
+                    .data_quest_block
+                        color: #848DA8
+                    .data_quest_block.data_last
+                        color: #184FEF
+                    .place_quest_block
+                        margin-left: 7.5px
+        
+        #past_blocks
+            display: none
+        .btn_popular_articles.btn_questions_hour
+            margin-top: 10px
+        .btn_questions_hour
+            padding-top: 13px
+            padding-bottom: 13px
+            width: 780px
+            background: linear-gradient(194.65deg, #46DEFF -3.54%, #246EFF 125.49%)
+            border-radius: 10px 
+            font-size: 20px
+            line-height: 24px
+            color: #FFFFFF
+            border: none
+            outline: none
+            margin-top: 20px
+        .btn_questions_hour:hover
+            opacity: 0.8
+        .btn_questions_hour:active
+            opacity: 1
+        .btn_questions_hour.btn_past
+            padding-top: 13px
+            padding-bottom: 13px
+
+        .popular_articles
+            margin-top: 60px
+            .heading_popular_articles
+                display: flex
+                margin-bottom: 26px
+                .item_2_heading_popular
+                    margin-top: -2px
+                    margin-left: 11px
+                    font-size: 30px
+                    line-height: 37px
+                    color: #2B2B2B
+                .item_3_heading_popular
+                    margin-left: 31px
+                .item_4_heading_popular
+                    margin-left: 5px
+                .nav_item
+                    font-size: 16px
+                    line-height: 19px
+                    color: #96AAD9
+                    width: 85px
+                    height: 27px
+                    text-align: center
+                    padding-top: 8px
+                    cursor: pointer
+                .nav_item.is-active
+                    position: relative
+                    background: #FFFFFF
+                    border-radius: 5px
+                    color: #3246FF
+                    .block_tab_shadow
+                        position: absolute
+                        top: 0
+                        width: 80px
+                        height: 35px
+                        background: #FFFFFF
+                        box-shadow: 0px 4px 6px #CAD9FF
+                        border-radius: 5px
+                        margin-left: 2.5px
+                        z-index: -1
+                    .block_tab_line
+                        position: absolute
+                        width: 23px
+                        margin-left: 30px
+                        height: 2px
+                        background: #4272FF
+                        box-shadow: 0px 2px 4px #6F9DFF
+                        bottom: 0
+            .content_popular_articles
+                display: none
+                justify-content: space-between
+                flex-wrap: wrap
+            .content_popular_articles.is-active
+                display: flex
+                .block_content_popular_articles.blue_block_content
+                    background: linear-gradient(176.74deg, #5B74E4 16.01%, #71B9FB 106.31%)
+                .block_content_popular_articles
+                    position: relative
+                    width: 375px
+                    height: 430px
+                    background: #FFFFFF
+                    box-shadow: 0px 4px 10px #E3E8FB
+                    border-radius: 8px
+                    margin-bottom: 30px
+                    overflow: hidden
+                    .img_block_content
+                        position: absolute
+                        top: 0
+                    .text_block
+                        position: absolute
+                        top: 210px
+                    .heading_block_popular_articles
+                        margin-top: 19px
+                        margin-left: 13px
+                        margin-right: 19px
+                        font-size: 23px
+                        line-height: 23px
+                        color: #222222
+                    .heading_block_popular_articles.white_popular_articles
+                        color: #FFFFFF
+                    .heading_block_popular_articles:hover
+                        text-decoration: underline
+                    .content_block_popular_articles
+                        margin-top: 16px
+                        margin-left: 15px
+                        margin-right: 19px
+                        font-size: 16px
+                        line-height: 21px
+                        color: #848DA8
+                    .content_block_popular_articles.white_popular_articles
+                        color: #FFFFFF
+                    .foot_block_popular_articles.blue_foot_block
+                        color: #D4E9FF
+                    .foot_block_popular_articles.white_foot_block
+                        color: #fff
+                    .foot_block_popular_articles
+                        display: flex
+                        margin-top: 15px
+                        margin-left: 15px
+                        font-size: 14px
+                        line-height: 21px
+                        color: #848DA8
+                        .foot_block_eye
+                            margin-right: 12px
+                    .rubric_popular_articles
+                        @include rubric (15px, 15px)
+                    .rubric_popular_articles:hover
+                        opacity: 0.8
+            #past_content_popular_articles
+                display: none
+    
+        .latest_articles
+            margin-top: 39px
+            .heading_latest_articles
+                display: flex
+                font-size: 35px
+                line-height: 43px
+                .item_2_latest_articles
+                    margin-top: -2px
+                    margin-left: 13px
+            .block_latest_articles
+                margin-top: 30px
+                position: relative
+                width: 750px
+                height: 180px
+                background: #FFFFFF
+                box-shadow: 0px 4px 10px #E3E8FB
+                border-radius: 8px
+                padding: 15px
+                display: flex
+                .content_latest_articles
+                    margin-left: 15px
+                    .icon_time
+                        font-size: 14px
+                        line-height: 21px
+                        color: #4272FF
+                    .icon_content_articles
+                        position: absolute
+                        bottom: 15px
+                    .heading_content_articles
+                        margin-top: 10px
+                        font-size: 23px
+                        line-height: 23px
+                        color: #222222
+                        padding-right: 20px
+                    .heading_content_articles:hover
+                        text-decoration: underline
+                    .text_content_articles
+                        margin-top: 15px
+                        font-size: 16px
+                        line-height: 21px
+                        color: #848DA8 
+                    @include icon
+                .rubric_latest_articles
+                    @include rubric (30px, 30px)
+                .rubric_latest_articles:hover
+                    opacity: 0.8
+            .numbering
+                width: 456px
+                height: 25px
+                margin-top: 45px
+                outline: 1px solid blue
+
+    .block_right
+        width: 301px
+        .free_consultation
+            word-wrap: break-word
+            height: 515px
+            background: linear-gradient(182.04deg, #2EC0B0 0.97%, #109BD3 107.13%)
+            border-radius: 10px
+            padding-top: 25px
+            text-align: center
+            .heading_free_consultation
+                font-size: 30px
+                line-height: 37px
+                color: #fff
+                p
+                    font-size: 20px
+                    line-height: 18px
+            .text_free_consultation
+                margin: 14px 35px 25px 35px
+                font-size: 15px
+                line-height: 18px
+                color: #F0FFFF
+                opacity: 0.7
+            .phone_free_consultation
+                margin-left: 25px
+                .phone_consultation_block
+                    padding-top: 9px
+                    width: 250px
+                    height: 26px
+                    background: #FFFFFF
+                    backdrop-filter: blur(4px)
+                    border-radius: 7px
+                    font-size: 16px
+                    line-height: 19px
+                    color: #1FA8B5
+                .phone_number
+                    margin-top: 12px
+                    display: flex
+                    font-size: 23px
+                    line-height: 28px
+                    color: #FFFFFF
+                    .phone_nuber_part1
+                        opacity: 0.4
+                        margin-right: 9px
+                        margin-left: 23px
+                        margin-bottom: 25px
+
+        .rubrics
+            position: relative
+            margin-top: 35px
+            background: #E0EAFF
+            border-radius: 8px
+            padding: 36px 25px 15px 25px
+            .rubrics_shadow
+                width: 292px
+                position: absolute
+                background: #E0EAFF
+                box-shadow: 0px 4px 14px #BFCBF4
+                border-radius: 8px
+                bottom: 0
+                left: 4.5px
+                z-index: -1
+            .heading_rubrics
+                margin-bottom: 40px
+                font-size: 30px
+                line-height: 23px
+                color: #222222
+                text-align: center
+            .block_rubrics
+                display: flex
+                position: relative
+                width: 220px
+                height: 35px
+                background: #FFFFFF
+                box-shadow: 0px 4px 10px #C7D7F9
+                border-radius: 8px
+                margin-bottom: 10px
+                padding: 15px
+                cursor: pointer
+                .ellipse
+                    position: relative
+                    width: 35px
+                    height: 35px
+                    border-radius: 17.5px
+                    background: #E5EDFD
+                    .icon
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                    .white_icon
+                        display: none
+                .heading_block
+                    position: relative
+                    font-size: 16px
+                    line-height: 23px
+                    color: #222222
+                    margin-left: 8px
+                    .text_heading
+                        @include centering
+                        margin-bottom: 8px
+                        width: 160px
+                    .text_content
+                        display: none
+                        margin-left: 1px
+                        font-size: 15px
+                        line-height: 30px
+                        color: #848DA8
+                    .text_content:hover
+                        text-decoration: underline
+                .vector_rubrics
+                    @include centering
+                    right: 17px
+
+            .block_rubrics.block_rubrics_active
+                height: auto
+                .ellipse
+                    position: relative
+                    background: linear-gradient(187.53deg, #46DEFF 6.07%, #246EFF 107.1%)
+                    .grey_icon
+                        display: none
+                    .white_icon
+                        display: block
+                    .ellipse_shadow
+                        position: absolute
+                        bottom: 0
+                        left: 50%
+                        transform: translate( -50%, 0)
+                        width: 27px
+                        height: 24px
+                        border-radius: 27px
+                        box-shadow: 0px 2px 12px #56CBFF
+                .vector_rubrics
+                    top: 27px
+                    transform: rotate(-90deg)
+                .text_heading
+                    font-weight: bold
+                    position: static
+                    margin-top: 17px
+                .text_content
+                    display: block
+
+        .discussed
+            position: relative
+            margin-top: 35px
+            box-shadow: 0px 4px 10px #E3E8FB
+            border-radius: 8px
+            overflow: hidden
+            text-align: center
+            padding-top: 44px
+            height: 642px
+            .discussed_back
+                position: absolute
+                background: linear-gradient(180deg, #4272FF 0%, #245AF8 100%)
+                z-index: -2
+                width: 100%
+                height: 100%
+                margin-top: -44px
+            .pattern
+                position: absolute
+                background: url(../img/pattern.png)
+                height: 490px
+                width: 100%
+                bottom: -23px
+                z-index: -1
+            .heading_discussed
+                font-size: 30px
+                line-height: 23px
+                color: #FFFFFF
+                margin-bottom: 39px
+            .block_discussed
+                display: flex
+                margin-left: 25px
+                margin-bottom: 30px
+                width: 250px
+                height: 83px
+            .discussed_name
+                text-align: left
+                margin-left: 13px
+                font-size: 16px
+                line-height: 19px
+                color: #FFFFFF
+                z-index: 5
+            .discussed_name:hover
+                text-decoration: underline
+            .discussed_icon
+                margin-top: 10px
+                margin-left: 13px
+                display: flex
+                font-size: 14px
+                line-height: 21px
+                color: #ADC2FF
+                .icon_item_dis_1
+                    margin-right: 11px
+
+.request_a_call
+    background: linear-gradient(351.96deg, #4063FF 6.1%, #71B9FB 69.2%)
+    box-shadow: 0px 4px 10px #EEF2FF
+    height: 510px
+    width: 100%
+    margin-top: 60px
+    .filling_request_a_call
+        position: relative
+        padding-top: 43px
+        width: 1110px
+        margin: auto
+        color: #FFFFFF
+        .man_filling
+            position: absolute
+            bottom: -35px
+            left: 687px
+            overflow: hidden
+            z-index: 2
+            img
+                margin-bottom: -5px
+        .pat_filling
+            position: absolute
+            left: 614px
+            bottom: -35px
+            overflow: hidden
+            z-index: 1
+            img
+                margin-bottom: -5px
+                @media ( max-width: 1250px  )
+                    margin-right: -40px
+                @media ( max-width: 1199px  )
+                    margin-right: -75px
+        .heading_filling
+            font-size: 35px
+            line-height: 43px
+        .subtitle_filling
+            font-size: 16px
+            line-height: 21px
+            margin-top: 8px
+            width: 561px
+        .text_area_form_question
+            margin-top: 30px
+            width: 630px
+            height: 140px
+            background: rgba(255, 255, 255, 0.2)
+            border: 1px solid rgba(255, 255, 255, 0.4)
+            box-sizing: border-box
+            border-radius: 6px
+            padding: 20px
+            color: #F8F9FF
+            font-size: 16px
+            line-height: 21px
+        .text_area_form_question::-webkit-input-placeholder 
+            color: #F8F9FF
+        .text_area_form_question:-moz-placeholder 
+            color: #F8F9FF
+        .text_area_form_question::-moz-placeholder
+            color: #F8F9FF
+        .text_area_form_question:-ms-input-placeholde
+            color: #F8F9FF 
+        .text_area_form_question::placeholder
+            color: #F8F9FF
+        .text_filling
+            width: 635px
+            font-size: 14px
+            line-height: 19px
+            opacity: 0.8
+            margin-top: 17px
+        .footer_filling
+            display: flex
+            margin-top: 40px
+            .btn_filling
+                position: relative
+                padding-top: 11px
+                padding-bottom: 11px
+                width: 245px
+                background: #fff
+                border-radius: 7px
+                color: #376DFF
+                font-size: 23px
+                line-height: 28px
+                border: none
+                outline: none
+                cursor: pointer
+            .btn_filling:hover
+                opacity: 0.8
+            .btn_filling:active
+                opacity: 1
+            #license_agreement
+                width: 358px
+                margin-left: 5px
+                margin-top: -4px
+                font-size: 12px
+                line-height: 18px
+                color: #8DB5FD
+            #check
+                margin-left: 22px
+                width: 10px
+                height: 10px
+                border: 1px solid #8DB5FD
+                box-sizing: border-box
+                border-radius: 2px
+                color: #8DB5FD
+                cursor: pointer
+                #check_mark
+                    margin-top: -6px
+                    margin-left: 1px
+                    display: none
+
+.how_we_are_working
+    width: 1110px
+    margin: auto
+    margin-top: 60px
+    .heading_working
+        font-size: 35px
+        line-height: 43px
+        color: #2B2B2B
+    .icon_working
+        display: flex
+        margin: auto
+        justify-content: space-between
+        width: 959px
+        margin-top: 40px
+        margin-bottom: 23px
+    .content_working
+        display: flex
+        justify-content: space-between
+        margin-top: 21px
+        text-align: center
+        .item_heading
+            font-size: 20px
+            line-height: 24px
+            color: #292929
+        .item_filling
+            font-size: 16px
+            line-height: 22px
+            color: #848DA8
+            margin-top: 8px
+        .item-1
+            width: 195px
+        .item-2
+            width: 258px
+        .item-3
+            width: 217px
+
+.in_numbers
+    padding-bottom: 44.4px
+    padding-top: 60px
+    width: 1110px
+    display: flex
+    justify-content: space-between
+    margin: auto
+    .block_in_numbers
+        position: relative
+        border-radius: 8px
+        color: #FFFFFF
+        img
+            margin-bottom: -4.6px
+        .numbers
+            position: absolute
+            top: 18px
+            left: 40px
+            display: flex
+            .heading_num
+                font-size: 35px
+                line-height: 24px
+                margin-right: 15px
+            .text_num
+                font-size: 15px
+                line-height: 17px
+                width: 100px
+                margin-top: -4px
+    .shadow_block_in_numbers
+        position: absolute
+        bottom: 0
+        left: 10px
+        width: 329px
+        height: 48px
+        border-radius: 8px
+        z-index: -1
+    .num_block1
+        background: #4775FB
+        .shadow_block_in_numbers
+            box-shadow: 0px 4px 16px #7A9CFF
+    .num_block2
+        background: #5AC0FF
+        .shadow_block_in_numbers
+            box-shadow: 0px 4px 16px #85D0FF
+    .num_block3
+        background: #18E5E6
+        .shadow_block_in_numbers
+            box-shadow: 0px 4px 16px #6BFEFF  
+
+.share
+    width: 1110px
+    margin: auto
+    display: flex
+    padding-bottom: 60px
+    .share_block
+        width: 110px
+        height: 20px
+        margin-right: 10px
+        border-radius: 2px
+        position: relative
+        display: flex
+        padding-top: 5px
+        .vert_line
+            position: absolute
+            height: 15px
+            width: 1px
+            top: 5px
+            right: 40px
+        .share_icon
+            width: 69px
+            text-align: center
+        .share_num
+            margin-top: -2.5px
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 20px
+            color: #FFFFFF
+            font-family: Montserrat
+            text-align: center
+            width: 40px
+    .vk_block
+        background: #426B9A
+        .share_icon
+            margin-top: -2px
+        .vert_line
+            background: #6B8FB9
+    .f_block
+        background: #4C68B3
+        .vert_line
+            background: #6985D1
+    .tw_block
+        background: #00ABED
+        .vert_line
+            background: #24C2FF
+    .odnoklassniki_block
+        background: #FF9800
+        .vert_line
+            background: #FFAE37
+
+.watching_right_now
+    margin: auto
+    width: 1110px
+    .heading_watching
+        font-size: 35px
+        line-height: 43px
+        color: #2B2B2B
+        margin-bottom: 33px
+    .content_watching
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        .block_watching
+            width: 256px
+            height: 322px
+            margin-bottom: 26px
+            .heading_block
+                font-size: 20px
+                line-height: 24px
+                color: #222222
+                width: 240px
+                margin-top: 13px
+                margin-bottom: 10px
+            .heading_block:hover
+                text-decoration: underline
+            @include icon
+
+.footer
+    .phons_background
+        width: 100%
+        height: 60px
+        background: #4573E8
+        display: flex
+        justify-content: center
+        .phons
+            height: 32px
+            width: 1110px
+            margin-top: 15px 
+            display: flex
+            justify-content: center
+            .free_line
+                width: 155px
+                height: 30px
+                font-size: 13px
+                line-height: 15px
+                color: #fff
+            .phon_1
+                @include phons(289px, 19px)
+                margin-left: 20px
+                .block_1
+                    @include blocks(145px)
+                .numder_1
+                    @include numbers (5px)
+            .phon_2
+                @include phons(321px, 19px)
+                .block_2
+                    @include blocks(180px)
+                .numder_2
+                    @include numbers (7px)
+            .phon_3
+                @include phons(283px, 0px)
+                .block_3
+                    @include blocks(140px)
+                .numder_3
+                    @include numbers (8px)
+        .blocks_text
+            font-size: 15px
+            line-height: 18px
+            color: #fff
+            position: relative
+            left: 11px
+            top: 6px
+    .footer_backgraund
+        background: #222222
+        width: 100%
+        height: 660px
+        padding-top: 35px
+    .citis
+        width: 1088px
+        margin: auto
+        padding-bottom: 30px
+        padding-right: 22px
+        border-bottom: 1px solid #505050
+        .heading_citis
+            font-size: 19px
+            line-height: 23px
+            color: #FFFFFF
+        .citis_citis
+            display: flex
+            justify-content: space-between
+            font-size: 20px
+            line-height: 30px
+            color: #818181
+            margin-top: 21px
+            .city
+                margin-left: 18px
+                cursor: pointer
+                .icon_city_white
+                    display: none
+                    margin-right: 4px
+                .icon_city_grey
+                    margin-right: 4px
+            .city:hover
+                color: #fff
+                .icon_city_white
+                    display: inline
+                .icon_city_grey
+                    display: none
+            .city.icon_city
+                margin-left: 0px
+    .footer_filling
+        display: flex
+        justify-content: space-between
+        width: 1110px
+        margin: auto
+        border-bottom: 1px solid #505050
+        margin-top: 29px
+        padding-bottom: 30px
+        .logo_text
+            font-size: 14px
+            line-height: 17px
+            width: 299px
+            margin-top: 14px
+            color: #5E5E5E
+        .nav_footer
+            width: 250px
+            font-size: 17px
+            line-height: 30px
+            .nav_item_footer
+                color: #818181
+            .nav_item_footer:hover
+                color: #fff
+    .about
+        width: 1110px
+        margin: auto
+        margin-top: 15px
+        .about_nav
+            display: flex
+            justify-content: flex-end
+            .item_about
+                font-size: 14px
+                line-height: 17px
+                color: #5E5E5E
+                margin-left: 30px
+            .item_about:hover
+                text-decoration: underline
+
+#myModal 
+    position: relative
+    width: 500px 
+    height: 240px
+    margin: 0 auto
+    padding: 18px 9px
+    border-radius: 10px
+    background: linear-gradient(351.96deg, #4063FF 6.1%, #71B9FB 69.2%)
+    position: fixed
+    top: 0 
+    left: 0 
+    right: 0 
+    bottom: 0
+    margin: auto
+    opacity: 0
+    z-index: 38
+    text-align: center
+    .modal_phone
+        width: 60%
+        margin-top: 25px
+        padding: 13px 14px
+        color: #F8F9FF
+        background: rgba(255, 255, 255, 0.2)
+        border: 1px solid rgba(255, 255, 255, 0.4)
+        box-sizing: border-box
+        border-radius: 6px
+        font-size: 15px
+        line-height: 21px
+    .modal_phone::-webkit-input-placeholder 
+        color: #F8F9FF
+        opacity: 0.5
+    .modal_phone:-moz-placeholder 
+        color: #F8F9FF
+        opacity: 0.5
+    .modal_phone::-moz-placeholder
+        color: #F8F9FF
+        opacity: 0.5
+    .modal_phone:-ms-input-placeholde
+        color: #F8F9FF 
+        opacity: 0.5 
+    .modal_phone::placeholder
+        color: #F8F9FF
+        opacity: 0.5
+    .modal_footer
+        display: flex
+        margin-top: 40px
+        justify-content: center
+        #license_agreement_modal
+            width: 358px
+            margin-left: 5px
+            margin-top: -10px
+            font-size: 15px
+            line-height: 18px
+            color: #9dbfff
+        #check_modal
+            margin-left: 22px
+            width: 15px
+            height: 15px
+            border: 1px solid #9dbfff
+            box-sizing: border-box
+            border-radius: 2px
+            color: #9dbfff
+            cursor: pointer
+            #check_mark_modal
+                margin-top: -6px
+                margin-left: 1px
+                transform: scale(1.3)
+                display: none
+    .btn_filling
+        position: relative
+        padding-top: 11px
+        padding-bottom: 11px
+        width: 245px
+        background: #fff
+        border-radius: 7px
+        color: #376DFF
+        font-size: 23px
+        line-height: 28px
+        border: none
+        outline: none
+        cursor: pointer
+        margin-top: 20px
+    .btn_filling:hover
+        opacity: 0.5
+    .btn_filling:active
+        opacity: 1
+#myModal__close 
+    width: 21px 
+    height: 21px
+    position: absolute
+    top: 1px
+    right: 11px
+    cursor: pointer
+    font-size: 29px
+    color: #F8F9FF
+#myOverlay 
+    z-index: 37
+    position: fixed
+    background-color: rgba(0,0,0,.7)
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    cursor: pointer
+    display: none
+

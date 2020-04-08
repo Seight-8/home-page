@@ -1,0 +1,551 @@
+@import "mixins"
+
+@media ( max-width:  1024px)
+    .hot_line
+        position: absolute
+        top: 0px
+        right: 30px
+
+    .hot_line_mobile.hot_line
+        right: 0px
+
+    .head
+        height: 350px
+        .phons_background
+            height: 120px
+            .phons
+                height: none
+                width: 768px
+                flex-wrap: wrap
+                .phon_1
+                    @include phons(360px, 10px)
+                    .block_1
+                        @include blocks(185px)
+                    .numder_1
+                        @include numbers (5px)
+                .phon_2
+                    @include phons(390px, 0px)
+                    .block_2
+                        @include blocks(220px)
+                    .numder_2
+                        @include numbers (5px)
+                .phon_3
+                    margin-top: 23px
+                    @include phons(360px, 10px)
+                    .block_3
+                        @include blocks(180px)
+                    .numder_3
+                        @include numbers (8px)
+                .free_line
+                    margin-top: 23px
+                    width: 390px
+                    font-size: 17px
+                    line-height: 19px
+                    text-align: right
+            .blocks_text
+                font-size: 19px
+                top: 11px
+        
+        .head_filling
+            width: 760px
+            margin: auto
+            display: block
+            position: relative
+            .logo
+                margin-top: 30px
+                margin-left: 5px
+            .icons
+                margin-top: 5px
+                margin-left: 10px
+
+        .nav
+            margin-top: 15px
+            .nav_bar
+                width: 760px
+                height: 122px
+                flex-wrap: wrap
+                justify-content: center
+                margin-top: -120px
+                .nav_section
+                    padding-left: 15px
+                    padding-right: 15px
+                    margin-top: 21px
+                    border-left: 1px solid #BDCFFF
+                    font-size: 19px
+                    .ellipse_1
+                        margin-left: 97px
+                    .ellipse_2
+                        margin-left: 264px
+                .border_none.nav_section
+                    border-left: none
+            .nav_bar_shadow
+                width: 740px
+                height: 120px
+                .dividing_lines
+                    display: none
+
+    .content
+        width: 768px
+        position: relative
+        .block_left
+            margin-right: 0px
+            width: 760px
+            position: relative
+            .top_text
+                width: 750px
+                margin-left: 20px
+                margin-top: 30px
+                padding-bottom: 60px
+                font-size: 20px
+                line-height: 27px
+            .form_question
+                width: 730px
+                border-radius: 10px
+                .subtitle_form_question
+                    font-size: 16px
+                    line-height: 20px
+                .text_area_form_question
+                    font-size: 17px
+                    line-height: 21px
+                .free_form_question
+                    font-size: 17px
+                    line-height: 21px
+                    margin: -35px 229px
+            .questions_hour
+                margin-top: 800px
+                .quest_block
+                    width: 690px
+            .btn_questions_hour
+                width: 760px
+            .popular_articles
+
+            .latest_articles
+                .block_latest_articles
+                    width: 730px
+                    height: 195px
+        .block_right
+            width: 720px
+            position: absolute
+            display: flex
+            justify-content: space-between
+            padding-left: 20px
+            padding-right: 20px
+            top: 640px
+            .free_consultation
+                display: none
+            .discussed
+                width: 380px
+            .rubrics
+
+    .request_a_call
+        .filling_request_a_call
+            width: 750px
+            .heading_filling, .subtitle_filling, .text_area_form_question, .footer_filling, .text_filling
+                position: relative
+                z-index: 10
+            .subtitle_filling, .text_area_form_question, 
+                font-size: 18px
+                line-height: 23px
+            .text_filling
+                font-size: 16px
+                line-height: 21px
+            .footer_filling
+                #license_agreement
+                    font-size: 15px
+                    line-height: 21px
+                #check
+                    width: 15px
+                    height: 15px
+                    #check_mark
+                        margin-top: -3px
+                        margin-left: 3px
+            .man_filling, .pat_filling
+                margin-left: -350px
+                opacity: 0.8
+                bottom: -15px
+    
+    .how_we_are_working
+        width: 760px
+        .icon_working
+            width: 656px
+        .scale_how
+            width: 760px
+
+    .in_numbers
+        width: 720px
+        flex-wrap: wrap
+        .block_in_numbers
+            margin-bottom: 20px
+
+    .share
+        width: 720px
+        
+    .watching_right_now
+        width: 760px
+        .content_watching
+            width: 580px
+            margin: auto
+    
+    .footer
+        .phons_background
+            height: 120px
+            .phons
+                height: none
+                width: 768px
+                flex-wrap: wrap
+                .phon_1
+                    @include phons(360px, 10px)
+                    .block_1
+                        @include blocks(185px)
+                    .numder_1
+                        @include numbers (5px)
+                .phon_2
+                    margin-top: 23px
+                    @include phons(390px, 0px)
+                    .block_2
+                        @include blocks(220px)
+                    .numder_2
+                        @include numbers (5px)
+                .phon_3
+                    margin-top: 23px
+                    @include phons(360px, 10px)
+                    .block_3
+                        @include blocks(180px)
+                    .numder_3
+                        @include numbers (8px)
+                .free_line
+                    width: 360px
+                    font-size: 17px
+                    line-height: 19px
+            .blocks_text
+                font-size: 19px
+                top: 11px
+        .citis
+            width: 720px
+            .citis_citis
+                font-size: 17px
+                line-height: 30px
+        .footer_backgraund
+            height: 710px
+        .footer_filling
+            position: relative
+            width: 720px
+            justify-content: start
+            padding-bottom: 50px
+            .logo_text
+                width: 230px
+            .icons_footer
+                position: absolute
+                top: 150px
+            .nav_footer
+                margin-left: 15px
+        .about
+            width: 720px
+
+@media ( max-width:  736px)
+    .hot_line
+        position: absolute
+        top: 130px
+        margin: auto
+        left: 10px
+        
+    .hot_line_mobile.hot_line
+        right: 0px
+        margin-top: 370px
+        margin-left: 20px
+
+    .head
+        height: 500px
+        .phons_background
+            height: 180px
+            .phons
+                width: 310px
+                flex-wrap: wrap
+                .phon_1
+                    @include phons(310px, 0px)
+                    .block_1
+                        @include blocks(145px)
+                    .numder_1
+                        @include numbers (5px)
+                .phon_2
+                    @include phons(310px, 0px)
+                    margin-top: 10px
+                    .block_2
+                        @include blocks(170px)
+                    .numder_2
+                        @include numbers (5px)
+                .phon_3
+                    @include phons(310px, 0px)
+                    margin-top: 10px
+                    .block_3
+                        @include blocks(140px)
+                    .numder_3
+                        @include numbers (8px)
+                .free_line
+                    margin-top: 10px
+                    width: 390px
+                    font-size: 17px
+                    line-height: 19px
+                    text-align: left
+                    margin-left: 5px
+            .blocks_text
+                font-size: 15px
+                top: 6px
+        
+        .head_filling
+            width: 310px
+            margin: auto
+            display: block
+            position: relative
+            .logo
+                margin-top: 30px
+                margin-left: 5px
+                img
+                    width: 100%
+            .icons
+                margin-top: 15px
+                margin-left: 10px
+                img
+                    width: 95%
+
+        .nav
+            display: none
+            margin-top: 260px
+
+    .content
+        width: 310px
+        position: relative
+        margin-top: 75px
+        .block_left
+            margin-top: 450px
+            width: 760px
+            position: relative
+            .top_text
+                width: 290px
+                margin-left: 20px
+                padding-bottom: 60px
+                font-size: 20px
+                line-height: 27px
+                height: 350px
+            .form_question
+                width: 290px
+                border-radius: 10px
+                padding: 15px
+                padding-bottom: 10px
+                padding-top: 19px
+                .heading_form_question
+                   font-size: 28px 
+                .subtitle_form_question
+                    font-size: 16px
+                    width: 280px
+                    line-height: 20px
+                .text_area_form_question
+                    font-size: 17px
+                    width: 100%
+                    line-height: 21px
+                .free_form_question
+                    font-size: 15px
+                    line-height: 21px
+                    margin: -45px 210px
+            .questions_hour
+                margin-top: 60px
+                .quest_block
+                    width: 290px
+                    padding: 18px 10px 19px 10px
+            .btn_questions_hour
+                width: 310px
+            .popular_articles
+                .heading_popular_articles
+                    display: flex
+                    margin-bottom: 30px
+                    .item_3_heading_popular
+                        margin-left: -300px
+                        margin-top: 60px
+                    .item_4_heading_popular
+                        margin-top: 60px
+                .content_popular_articles.is-active
+                    .block_content_popular_articles
+                        width: 310px
+                        .heading_block_popular_articles
+                            margin-top: 10px
+            .latest_articles
+                margin-top: 70px
+                .block_latest_articles
+                    display: block
+                    width: 275px
+                    height: 480px
+                    padding: 15px
+                    .content_latest_articles
+                        .icon_content_articles
+                .numbering
+                    width: 310px
+        .block_right
+            margin-top: -150px
+            width: 310px
+            position: absolute
+            display: block
+            justify-content: start
+            top: 0px
+            padding-left: 0px
+            padding-right: 0px
+            .free_consultation
+                display: none
+            .discussed
+                width: 380px
+                display: none
+            .rubrics
+                .heading_rubrics
+                    display: none
+
+    .request_a_call
+        height: 770px
+        .filling_request_a_call
+            width: 310px
+            .heading_filling, .subtitle_filling, .text_area_form_question, .footer_filling, .text_filling
+                position: relative
+                width: 310px
+            .subtitle_filling, .text_area_form_question, 
+                font-size: 18px
+                line-height: 23px
+                margin-top: 15px
+            .text_filling
+                font-size: 16px
+                line-height: 21px
+                margin-top: 25px
+            .footer_filling
+                display: block
+                text-align: center
+                #license_agreement
+                    font-size: 15px
+                    line-height: 21px
+                    width: 270px
+                    position: absolute
+                    right: 0px
+                    margin-top: 18px
+                    text-align: left
+                #check
+                    position: absolute
+                    margin-left: 13px
+                    margin-top: 20px
+            .man_filling, .pat_filling
+                display: none
+    
+    .how_we_are_working
+        width: 310px
+        .icon_working
+            width: 260px
+        .scale_how
+            width: 310px
+        .content_working
+            display: block
+            .item_heading
+                width: 290px
+            .item_filling
+                width: 290px
+                margin-bottom: 20px
+
+    .in_numbers
+        position: relative
+        width: 350px
+        flex-wrap: wrap
+        transform: scale(0.9)
+        margin-bottom: 20px
+
+    .share
+        flex-wrap: wrap
+        width: 310px
+        .share_block
+            margin-bottom: 10px
+
+    .watching_right_now
+        width: 310px
+        .content_watching
+            width: 310px
+            .block_watching
+                margin: auto
+
+    .footer
+        .phons_background
+            height: 190px
+            .phons
+                width: 310px
+                flex-wrap: wrap
+                .phon_1
+                    margin-top: 10px
+                    margin-left: 0px
+                    @include phons(310px, 0px)
+                    .block_1
+                        @include blocks(145px)
+                    .numder_1
+                        @include numbers (5px)
+                .phon_2
+                    @include phons(310px, 0px)
+                    margin-top: 10px
+                    .block_2
+                        @include blocks(170px)
+                    .numder_2
+                        @include numbers (5px)
+                .phon_3
+                    @include phons(310px, 0px)
+                    margin-top: 10px
+                    .block_3
+                        @include blocks(140px)
+                    .numder_3
+                        @include numbers (8px)
+                .free_line
+                    width: 390px
+                    font-size: 17px
+                    line-height: 19px
+                    text-align: left
+                    margin-left: 5px
+                    margin-bottom: 10px
+            .blocks_text
+                font-size: 15px
+                top: 6px
+        .citis
+            width: 290px
+            .heading_citis
+                text-align: center
+            .citis_citis
+                display: block
+                font-size: 17px
+                line-height: 30px
+                width: 290px
+                margin-left: 15px
+                .items_citis
+                    margin-left: 60px
+        .footer_backgraund
+            height: 2150px
+        .footer_filling
+            position: relative
+            width: 280px
+            padding-bottom: 230px
+            display: block
+            padding-left: 30px
+            .logo_text
+                width: 230px
+                margin: auto
+            .icons_footer
+                position: absolute
+                top: 150px
+            .nav_footer
+                margin-top: 140px
+        .about
+            width: 290px
+            .about_nav
+               flex-wrap: wrap 
+               .item_about
+                   margin-bottom: 15px
+
+@media ( max-width: 500px)
+    #myModal
+        width: 300px
+        height: 270px
+    .modal_phone
+        width: 80%
+    .modal_footer
+        #license_agreement_modal 
+            width: 250px
+@media ( max-width:  320px)
+    .in_numbers
+        margin-left: -12px

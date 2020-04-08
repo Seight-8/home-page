@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main_mobile.css">
+    <meta name="viewport" content="initial-scale=1">
+
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+<body>
+    <div id="myModal">
+        <input id="phone_1" name="phone" type="text" class="modal_phone" placeholder="Ваш телефон"><br/>
+        <div class="modal_footer">
+            <div id="check_modal" checked="false" onclick="check_license_agreement_modal()">
+                <div id="check_mark_modal">&#10003;</div>
+            </div>
+            <div id="license_agreement_modal">
+                Нажимая кнопку «Заказать звонок», вы принимаете условия Политики обработки персональных данных.
+            </div>    
+        </div>
+        <button class="btn_filling" onclick="vailability_check_modal()">
+            <strong>Заказать звонок</strong>
+        </button> 
+        <span id="myModal__close" class="close">х</span>
+    </div>
+    <div id="myOverlay"></div>
+    <div class="head">
+        <div class="phons_background">
+            <div class="phons">
+                <div class="phon_1">
+                    <div class="block_1">
+                        <div class="blocks_text">Для Москвы и МО</div>
+                    </div>
+                    <div class="numder_1">
+                        +7 (499) 938-80-92
+                    </div>
+                </div>
+                <div class="phon_2">
+                    <div class="block_2">
+                        <div class="blocks_text">Для СПБ и Ленобласти</div>
+                    </div>
+                    <div class="numder_2">
+                        +7 (812) 467-36-94
+                    </div>
+                </div>
+                <div class="phon_3">
+                    <div class="block_3">
+                        <div class="blocks_text">Для Регионов РФ</div>
+                    </div>
+                    <div class="numder_3">
+                        +7 (800) 350-31-76
+                    </div>
+                </div>
+                <div class="free_line">
+                    Бесплатная консультация<br/>Свободных юристов: 5
+                </div>
+            </div>
+        </div>
+        <div class="head_filling">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="icons">
+                <img src="img/icons.png" alt="icons">
+            </div>
+            <div class="hot_line">
+                <div class="text_hot_line">Горячая линия:</div>
+                <div class="number_hot_line">+7 (800) 350-31-76</div>
+                <button class="btn_hot_line myLinkModal">Заказать звонок</button>
+            </div>
+        </div>
+        <div class="nav">
+            <div>
+                <div class="nav_bar_shadow">
+                    <div class="dividing_lines">
+                        <div class="division_line line_1"></div>
+                        <div class="division_line line_2"></div>
+                        <div class="division_line line_3"></div>
+                        <div class="division_line line_4"></div>
+                        <div class="division_line line_5"></div>
+                        <div class="division_line"></div>
+                    </div>
+                </div>
+                <div class="nav_bar">
+                    <a href="#">
+                        <div class="nav_section border_none">
+                            Компенсации
+                            <div class="border_bot"></div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="nav_section">
+                            Трудовые
+                            <img src="img/bell.png" alt="bell">
+                            <div class="ellipse_1"><img src="img/ellipse.png" alt="bell"><span>1</span></div>
+                            <div class="border_bot"></div>
+                        </div>    
+                    </a>
+                    <a href="#"></a>
+                    <div class="nav_section">
+                        Детские пособия в регионах
+                        <img src="img/bell.png" alt="bell">
+                        <div class="ellipse_2"><img src="img/ellipse.png" alt="bell"><span>15</span></div>
+                        <div class="border_bot"></div>
+                    </div>
+                    <a href="#">
+                        <div class="nav_section border_none">
+                            Инвалидам
+                            <div class="border_bot"></div>
+                        </div>    
+                    </a>
+                    <a href="#">
+                        <div class="nav_section">
+                            Военнослужащим
+                            <div class="border_bot"></div>
+                        </div>    
+                    </a>
+                    <a href="#">
+                        <div class="nav_section">
+                            Детям<img src="img/Vector.png" alt="">
+                            <div class="border_bot"></div>
+                        </div>    
+                    </a>
+                    <a href="#">
+                        <div class="nav_section border_bot_none">
+                            Материнский капитал
+                            <div class="border_bot"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="block_left">
+            <div class="top_text">
+                Что делать, если Вам необходима бесплатная юридическая консультация от опытного юриста в Москве? Вы можете в любое время суток обратиться к нашим квалифицированным юристам за помощью в виде бесплатной юридической консультации. Теперь любой вопрос можно решить срочно и бесплатно не выходя из дома, а просто позвонив по телефону горячей линии. Звоните, поможем!
+            </div>
+            <div class="form_question">
+                <div class="heading_form_question">
+                    Есть вопрос к юристу?
+                </div>
+                <div class="subtitle_form_question">
+                    Оставьте телефон, с вами свяжутся действующие юристы в течение 15 минут по вашему вопросу
+                </div>
+                <textarea class="text_area_form_question" placeholder="Текст вашего вопроса..."></textarea><br/>
+                <input id="phone_2" name="phone"type="text" class="text_area_form_question phone_form_question" placeholder="Ваш телефон"><br/>
+                <button class="btn_form_question">Заказать звонок</button>
+                <div class="free_form_question">Услуга бесплатная</div>
+            </div>
+            <div class="questions_hour">
+                <div class="heading_questions_hour">
+                    <div class="item_1_questions_hour">
+                        <img src="img/icon_quest.png" alt="icon">
+                    </div>
+                    <div class="item_2_questions_hour">
+                        <strong>Вопросы юристам за последний час</strong>
+                    </div>
+                </div>
+                <div class="quest_block">
+                    <a href="#">
+                        <div class="heading_quest_block">
+                            <strong>Может ли организация использующая ККМ принимать оплату электронно по реквизитам через банк?</strong>
+                        </div>
+                    </a>
+                    <div class="location_quest_block">
+                        <div class="data_quest_block data_last">
+                            <img src="img/time_last.png" alt="data">
+                            23.06.2019
+                        </div>
+                        <div class="place_quest_block">
+                            <img src="img/place.png" alt="place">
+                            Чита
+                        </div>
+                    </div>
+                </div>
+                <div class="quest_block">
+                    <a href="#">
+                        <div class="heading_quest_block">
+                            <strong>Продвижение рекламных услуг. Прозвон и автопрозвон потенциальных клиентов является ли нарушением закона? Возможен ли штраф?</strong>
+                        </div>
+                    </a>
+                    <div class="location_quest_block">
+                        <div class="data_quest_block">
+                            <img src="img/time_last.png" alt="data">
+                            23.06.2019
+                        </div>
+                        <div class="place_quest_block">
+                            <img src="img/place.png" alt="place">
+                            Чита
+                        </div>
+                    </div>
+                </div>
+                <div class="quest_block">
+                    <a href="#">
+                        <div class="heading_quest_block">
+                            <strong>Продвижение рекламных услуг. Прозвон и автопрозвон потенциальных клиентов является ли нарушением закона? Возможен ли штраф?</strong>
+                        </div>
+                    </a>
+                    <div class="location_quest_block">
+                        <div class="data_quest_block">
+                            <img src="img/time_last.png" alt="data">
+                            23.06.2019
+                        </div>
+                        <div class="place_quest_block">
+                            <img src="img/place.png" alt="place">
+                            Чита
+                        </div>
+                    </div>
+                </div>
+                <div class="quest_block">
+                    <a href="#">
+                        <div class="heading_quest_block">
+                            <strong>Может ли оператор произвести списание средств за услуги, не оплаченные ранее по вине оператора?</strong>
+                        </div>
+                    </a>
+                    <div class="location_quest_block">
+                        <div class="data_quest_block">
+                            <img src="img/time_last.png" alt="data">
+                            23.06.2019
+                        </div>
+                        <div class="place_quest_block">
+                            <img src="img/place.png" alt="place">
+                            Чита
+                        </div>
+                    </div>
+                </div>
+                <div class="quest_block">
+                    <a href="#">
+                        <div class="heading_quest_block">
+                            <strong>Как добиться отмены заказа на покупку лицензии?</strong>
+                        </div>
+                    </a>
+                    <div class="location_quest_block">
+                        <div class="data_quest_block">
+                            <img src="img/time_last.png" alt="data">
+                            23.06.2019
+                        </div>
+                        <div class="place_quest_block">
+                            <img src="img/place.png" alt="place">
+                            Чита
+                        </div>
+                    </div>
+                </div>
+                <div id="past_blocks">
+                    <div class="quest_block">
+                        <a href="#">
+                            <div class="heading_quest_block">
+                                <strong>Может ли организация использующая ККМ принимать оплату электронно по реквизитам через банк?</strong>
+                            </div>
+                        </a>
+                        <div class="location_quest_block">
+                            <div class="data_quest_block">
+                                <img src="img/time_last.png" alt="data">
+                                23.06.2019
+                            </div>
+                            <div class="place_quest_block">
+                                <img src="img/place.png" alt="place">
+                                Чита
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quest_block">
+                        <a href="#">
+                            <div class="heading_quest_block">
+                                <strong>Продвижение рекламных услуг. Прозвон и автопрозвон потенциальных клиентов является ли нарушением закона? Возможен ли штраф?</strong>
+                            </div>
+                        </a>
+                        <div class="location_quest_block">
+                            <div class="data_quest_block">
+                                <img src="img/time_last.png" alt="data">
+                                23.06.2019
+                            </div>
+                            <div class="place_quest_block">
+                                <img src="img/place.png" alt="place">
+                                Чита
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quest_block">
+                        <a href="#">
+                            <div class="heading_quest_block">
+                                <strong>Продвижение рекламных услуг. Прозвон и автопрозвон потенциальных клиентов является ли нарушением закона? Возможен ли штраф?</strong>
+                            </div>
+                        </a>
+                        <div class="location_quest_block">
+                            <div class="data_quest_block">
+                                <img src="img/time_last.png" alt="data">
+                                23.06.2019
+                            </div>
+                            <div class="place_quest_block">
+                                <img src="img/place.png" alt="place">
+                                Чита
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quest_block">
+                        <a href="#">
+                            <div class="heading_quest_block">
+                                <strong>Может ли оператор произвести списание средств за услуги, не оплаченные ранее по вине оператора?</strong>
+                            </div>
+                        </a>
+                        <div class="location_quest_block">
+                            <div class="data_quest_block">
+                                <img src="img/time_last.png" alt="data">
+                                23.06.2019
+                            </div>
+                            <div class="place_quest_block">
+                                <img src="img/place.png" alt="place">
+                                Чита
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quest_block">
+                        <a href="#">
+                            <div class="heading_quest_block">
+                                <strong>Как добиться отмены заказа на покупку лицензии?</strong>
+                            </div>
+                        </a>
+                        <div class="location_quest_block">
+                            <div class="data_quest_block">
+                                <img src="img/time_last.png" alt="data">
+                                23.06.2019
+                            </div>
+                            <div class="place_quest_block">
+                                <img src="img/place.png" alt="place">
+                                Чита
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <button class="btn_questions_hour btn_past">
+                            Показать все коментарии
+                        </button>
+                    </a>
+                </div>
+                <button id="btn_questions_hour" class="btn_questions_hour" onclick="download_more_questions()">
+                    Загрузить еще
+                </button>
+            </div>
+            <div class="popular_articles">
+                <div class="heading_popular_articles">
+                    <div class="item_1_heading_popular">
+                        <img src="img/star.png" alt="star">
+                    </div>
+                    <div class="item_2_heading_popular">
+                        <strong>Популярные статьи</strong>
+                    </div>
+                    <div class="item_3_heading_popular nav_item is-active" data-tab-name="week">
+                        <div>Неделя</div>
+                        <div class="block_tab_shadow"></div>
+                        <div class="block_tab_line"></div>
+                    </div>
+                    <div class="item_4_heading_popular nav_item" data-tab-name="month">
+                        <div>Месяц</div>
+                        <div class="block_tab_shadow"></div>
+                        <div class="block_tab_line"></div>
+                    </div>
+                </div>
+                <div class="content_popular_articles week is-active">
+                    <div class="block_content_popular_articles">
+                        <img class="img_block_content" src="img/block1.png">
+                        <a href="#">
+                            <div class="rubric_popular_articles">
+                                Компенсации
+                            </div>
+                        </a>
+                        <div class="text_block">
+                            <a href="#">
+                                <div class="heading_block_popular_articles"><strong>Компенсация за перевод авто на газ</strong></div>
+                            </a>
+                            <div class="content_block_popular_articles">
+                                Министерством энергетики РФ разработана специальная программа, согласно которой, граждане, установившие ГБО (газобаллонное оборудование) на
+                            </div>
+                            <div class="foot_block_popular_articles">
+                                <div class="foot_block_eye">
+                                    <img src="img/eye.png" alt="eye">
+                                    156
+                                </div>
+                                <div class="foot_block_clock">
+                                    <img src="img/clock.png" alt="clock">
+                                    4 дня назад
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="block_content_popular_articles">
+                        <img class="img_block_content" src="img/block2.png">
+                        <a href="#">
+                            <div class="rubric_popular_articles">
+                                Субсидии
+                            </div>
+                        </a>
+                        <div class="text_block">
+                            <a href="#">
+                                <div class="heading_block_popular_articles"><strong>Субсидия за установку шлагбаума в Москве</strong></div>
+                            </a>
+                            <div class="content_block_popular_articles">
+                                Столичные жители любых многоквартирных домов могут рассчитывать на получение компенсации за установку шлагбаума на
+                            </div>
+                            <div class="foot_block_popular_articles">
+                                <div class="foot_block_eye">
+                                    <img src="img/eye.png" alt="eye">
+                                    156
+                                </div>
+                                <div class="foot_block_clock">
+                                    <img src="img/clock.png" alt="clock">
+                                    4 дня назад
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="block_content_popular_articles">
+                        <img class="img_block_content" src="img/block3.png">
+                        <a href="#">
+                            <div class="rubric_popular_articles">
+                                Компенсации
+                            </div>
+                        </a>
+                        <div class="text_block">
+                            <a href="#">
+                                <div class="heading_block_popular_articles white_popular_articles"><strong>Доплата к пенсии работникам сельского хозяйства в 2019 году</strong></div>
+                            </a>
+                            <div class="content_block_popular_articles white_popular_articles">
+                                Различные льготы на социальные выплаты, а также надбавки к пенсиям получили значительное распространение
+                            </div>
+                            <div class="foot_block_popular_articles white_foot_block">
+                                <div class="foot_block_eye">
+                                    <img src="img/eye_white.png" alt="eye">
+                                    156
+                                </div>
+                                <div class="foot_block_clock">
+                                    <img src="img/clock_white.png" alt="clock">
+                                    4 дня назад
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="block_content_popular_articles">
+                        <img class="img_block_content" src="img/block4.png">
+                        <a href="#">
+                            <div class="rubric_popular_articles">
+                                Компенсации
+                            </div>
+                        </a>
+                        <div class="text_block">
+                            <a href="#">
+                                <div class="heading_block_popular_articles"><strong>Льготы на дрова пенсионерам</strong></div>
+                            </a>
+                            <div class="content_block_popular_articles">
+                                Граждане, которые топят свои жилые помещения исключительно с помощью дров, имеют право рассчитывать на                            </div>
+                            <div class="foot_block_popular_articles">
+                                <div class="foot_block_eye">
+                                    <img src="img/eye.png" alt="eye">
+                                    156
+                                </div>
+                                <div class="foot_block_clock">
+                                    <img src="img/clock.png" alt="clock">
+                                    4 дня назад
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="block_content_popular_articles blue_block_content">
+                        <img class="img_block_content" src="img/block5.png">
+                        <a href="#">
+                            <div class="rubric_popular_articles">
+                                Компенсации
+                            </div>
+                        </a>
+                        <div class="text_block">
+                            <a href="#">
+                                <div class="heading_block_popular_articles white_popular_articles"><strong>Льготы за электроэнергию ветеранам боевых действий в 2019 году</strong></div>
+                            </a>
+                            <div class="content_block_popular_articles white_popular_articles">
+                                Меры господдержки ветеранов боевых действий устанавливаются ст. 16 ФЗ от 12.01.1995 №5-ФЗ.                            </div>
+                            <div class="foot_block_popular_articles blue_foot_block">
+                                <div class="foot_block_eye">
+                                    <img src="img/eye_blue.png" alt="eye">
+                                    156
+                                </div>
+                                <div class="foot_block_clock">
+                                    <img src="img/clock_blue.png" alt="clock">
+                                    4 дня назад
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="block_content_popular_articles">
+                        <img class="img_block_content" src="img/block6.png">
+                        <a href="#">
+                            <div class="rubric_popular_articles">
+                                Субсидии
+                            </div>
+                        </a>
+                        <div class="text_block">
+                            <a href="#">
+                                <div class="heading_block_popular_articles white_popular_articles"><strong>Возврат родительской платы за детский сад в Москве в 2019 году</strong></div>
+                            </a>
+                            <div class="content_block_popular_articles white_popular_articles">
+                                Столичные семьи имеют право на получение компенсации производимой оплаты за посещение их детьми дошкольных                            </div>
+                            <div class="foot_block_popular_articles white_foot_block">
+                                <div class="foot_block_eye">
+                                    <img src="img/eye_white.png" alt="eye">
+                                    156
+                                </div>
+                                <div class="foot_block_clock">
+                                    <img src="img/clock_white.png" alt="clock">
+                                    4 дня назад
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div id="past_content_popular_week" class="content_popular_articles">
+                        <div class="block_content_popular_articles">
+                            <img class="img_block_content" src="img/block1.png">
+                            <a href="#">
+                                <div class="rubric_popular_articles">
+                                    Компенсации
+                                </div>
+                            </a>
+                            <div class="text_block">
+                                <a href="#">
+                                    <div class="heading_block_popular_articles"><strong>Компенсация за перевод авто на газ</strong></div>
+                                </a>
+                                <div class="content_block_popular_articles">
+                                    Министерством энергетики РФ разработана специальная программа, согласно которой, граждане, установившие ГБО (газобаллонное оборудование) на
+                                </div>
+                                <div class="foot_block_popular_articles">
+                                    <div class="foot_block_eye">
+                                        <img src="img/eye.png" alt="eye">
+                                        156
+                                    </div>
+                                    <div class="foot_block_clock">
+                                        <img src="img/clock.png" alt="clock">
+                                        4 дня назад
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="block_content_popular_articles">
+                            <img class="img_block_content" src="img/block2.png">
+                            <a href="#">
+                                <div class="rubric_popular_articles">
+                                    Субсидии
+                                </div>
+                            </a>
+                            <div class="text_block">
+                                <a href="#">
+                                    <div class="heading_block_popular_articles"><strong>Субсидия за установку шлагбаума в Москве</strong></div>
+                                </a>
+                                <div class="content_block_popular_articles">
+                                    Столичные жители любых многоквартирных домов могут рассчитывать на получение компенсации за установку шлагбаума на
+                                </div>
+                                <div class="foot_block_popular_articles">
+                                    <div class="foot_block_eye">
+                                        <img src="img/eye.png" alt="eye">
+                                        156
+                                    </div>
+                                    <div class="foot_block_clock">
+                                        <img src="img/clock.png" alt="clock">
+                                        4 дня назад
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="block_content_popular_articles">
+                            <img class="img_block_content" src="img/block3.png">
+                            <a href="#">
+                                <div class="rubric_popular_articles">
+                                    Компенсации
+                                </div>
+                            </a>
+                            <div class="text_block">
+                                <a href="#">
+                                    <div class="heading_block_popular_articles white_popular_articles"><strong>Доплата к пенсии работникам сельского хозяйства в 2019 году</strong></div>
+                                </a>
+                                <div class="content_block_popular_articles white_popular_articles">
+                                    Различные льготы на социальные выплаты, а также надбавки к пенсиям получили значительное распространение
+                                </div>
+                                <div class="foot_block_popular_articles white_foot_block">
+                                    <div class="foot_block_eye">
+                                        <img src="img/eye_white.png" alt="eye">
+                                        156
+                                    </div>
+                                    <div class="foot_block_clock">
+                                        <img src="img/clock_white.png" alt="clock">
+                                        4 дня назад
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="block_content_popular_articles">
+                            <img class="img_block_content" src="img/block4.png">
+                            <a href="#">
+                                <div class="rubric_popular_articles">
+                                    Компенсации
+                                </div>
+                            </a>
+                            <div class="text_block">
+                                <a href="#">
+                                    <div class="heading_block_popular_articles"><strong>Льготы на дрова пенсионерам</strong></div>
+                                </a>
+                                <div class="content_block_popular_articles">
+                                    Граждане, которые топят свои жилые помещения исключительно с помощью дров, имеют право рассчитывать на                            </div>
+                                <div class="foot_block_popular_articles">
+                                    <div class="foot_block_eye">
+                                        <img src="img/eye.png" alt="eye">
+                                        156
+                                    </div>
+                                    <div class="foot_block_clock">
+                                        <img src="img/clock.png" alt="clock">
+                                        4 дня назад
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="block_content_popular_articles blue_block_content">
+                            <img class="img_block_content" src="img/block5.png">
+                            <a href="#">
+                                <div class="rubric_popular_articles">
+                                    Компенсации
+                                </div>
+                            </a>
+                            <div class="text_block">
+                                <a href="#">
+                                    <div class="heading_block_popular_articles white_popular_articles"><strong>Льготы за электроэнергию ветеранам боевых действий в 2019 году</strong></div>
+                                </a>
+                                <div class="content_block_popular_articles white_popular_articles">
+                                    Меры господдержки ветеранов боевых действий устанавливаются ст. 16 ФЗ от 12.01.1995 №5-ФЗ.                            </div>
+                                <div class="foot_block_popular_articles blue_foot_block">
+                                    <div class="foot_block_eye">
+                                        <img src="img/eye_blue.png" alt="eye">
+                                        156
+                                    </div>
+                                    <div class="foot_block_clock">
+                                        <img src="img/clock_blue.png" alt="clock">
+                                        4 дня назад
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="block_content_popular_articles">
+                            <img class="img_block_content" src="img/block6.png">
+                            <a href="#">
+                                <div class="rubric_popular_articles">
+                                    Субсидии
+                                </div>
+                            </a>
+                            <div class="text_block">
+                                <a href="#">
+                                    <div class="heading_block_popular_articles white_popular_articles"><strong>Возврат родительской платы за детский сад в Москве в 2019 году</strong></div>
+                                </a>
+                                <div class="content_block_popular_articles white_popular_articles">
+                                    Столичные семьи имеют право на получение компенсации производимой оплаты за посещение их детьми дошкольных                            </div>
+                                <div class="foot_block_popular_articles white_foot_block">
+                                    <div class="foot_block_eye">
+                                        <img src="img/eye_white.png" alt="eye">
+                                        156
+                                    </div>
+                                    <div class="foot_block_clock">
+                                        <img src="img/clock_white.png" alt="clock">
+                                        4 дня назад
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <a href="#">
+                            <button class="btn_questions_hour btn_popular_articles">
+                                Показать все статьи
+                            </button>
+                        </a>
+                    </div>
+                    <button id="btn_popular_articles_week" class="btn_questions_hour btn_popular_articles" onclick="download_more_popular_articles_week()">
+                        Загрузить еще
+                    </button>    
+                </div>
+                <div class="content_popular_articles month">
+                    <div class="block_content_popular_articles">
+                        <img class="img_block_content" src="img/block6.png">
+                        <a href="#">
+                            <div class="rubric_popular_articles">
+                                Субсидии
+                            </div>
+                        </a>
+                        <div class="text_block">
+                            <a href="#">
+                                <div class="heading_block_popular_articles white_popular_articles"><strong>Возврат родительской платы за детский сад в Москве в 2019 году</strong></div>
+                            </a>
+                            <div class="content_block_popular_articles white_popular_articles">
+                                Столичные семьи имеют право на получение компенсации производимой оплаты за посещение их детьми дошкольных                            </div>
+                            <div class="foot_block_popular_articles white_foot_block">
+                                <div class="foot_block_eye">
+                                    <img src="img/eye_white.png" alt="eye">
+                                    156
+                                </div>
+                                <div class="foot_block_clock">
+                                    <img src="img/clock_white.png" alt="clock">
+                                    4 дня назад
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="block_content_popular_articles">
+                        <img class="img_block_content" src="img/block4.png">
+                        <a href="#">
+                            <div class="rubric_popular_articles">
+                                Компенсации
+                            </div>
+                        </a>
+                        <div class="text_block">
+                            <a href="#">
+                                <div class="heading_block_popular_articles"><strong>Льготы на дрова пенсионерам</strong></div>
+                            </a>
+                            <div class="content_block_popular_articles">
+                                Граждане, которые топят свои жилые помещения исключительно с помощью дров, имеют право рассчитывать на                            </div>
+                            <div class="foot_block_popular_articles">
+                                <div class="foot_block_eye">
+                                    <img src="img/eye.png" alt="eye">
+                                    156
+                                </div>
+                                <div class="foot_block_clock">
+                                    <img src="img/clock.png" alt="clock">
+                                    4 дня назад
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="block_content_popular_articles">
+                        <img class="img_block_content" src="img/block1.png">
+                        <a href="#">
+                            <div class="rubric_popular_articles">
+                                Компенсации
+                            </div>
+                        </a>
+                        <div class="text_block">
+                            <a href="#">
+                                <div class="heading_block_popular_articles"><strong>Компенсация за перевод авто на газ</strong></div>
+                            </a>
+                            <div class="content_block_popular_articles">
+                                Министерством энергетики РФ разработана специальная программа, согласно которой, граждане, установившие ГБО (газобаллонное оборудование) на
+                            </div>
+                            <div class="foot_block_popular_articles">
+                                <div class="foot_block_eye">
+                                    <img src="img/eye.png" alt="eye">
+                                    156
+                                </div>
+                                <div class="foot_block_clock">
+                                    <img src="img/clock.png" alt="clock">
+                                    4 дня назад
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="block_content_popular_articles">
+                        <img class="img_block_content" src="img/block2.png">
+                        <a href="#">
+                            <div class="rubric_popular_articles">
+                                Субсидии
+                            </div>
+                        </a>
+                        <div class="text_block">
+                            <a href="#">
+                                <div class="heading_block_popular_articles"><strong>Субсидия за установку шлагбаума в Москве</strong></div>
+                            </a>
+                            <div class="content_block_popular_articles">
+                                Столичные жители любых многоквартирных домов могут рассчитывать на получение компенсации за установку шлагбаума на
+                            </div>
+                            <div class="foot_block_popular_articles">
+                                <div class="foot_block_eye">
+                                    <img src="img/eye.png" alt="eye">
+                                    156
+                                </div>
+                                <div class="foot_block_clock">
+                                    <img src="img/clock.png" alt="clock">
+                                    4 дня назад
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="block_content_popular_articles">
+                        <img class="img_block_content" src="img/block3.png">
+                        <a href="#">
+                            <div class="rubric_popular_articles">
+                                Компенсации
+                            </div>
+                        </a>
+                        <div class="text_block">
+                            <a href="#">
+                                <div class="heading_block_popular_articles white_popular_articles"><strong>Доплата к пенсии работникам сельского хозяйства в 2019 году</strong></div>
+                            </a>
+                            <div class="content_block_popular_articles white_popular_articles">
+                                Различные льготы на социальные выплаты, а также надбавки к пенсиям получили значительное распространение
+                            </div>
+                            <div class="foot_block_popular_articles white_foot_block">
+                                <div class="foot_block_eye">
+                                    <img src="img/eye_white.png" alt="eye">
+                                    156
+                                </div>
+                                <div class="foot_block_clock">
+                                    <img src="img/clock_white.png" alt="clock">
+                                    4 дня назад
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    
+                    <div class="block_content_popular_articles blue_block_content">
+                        <img class="img_block_content" src="img/block5.png">
+                        <a href="#">
+                            <div class="rubric_popular_articles">
+                                Компенсации
+                            </div>
+                        </a>
+                        <div class="text_block">
+                            <a href="#">
+                                <div class="heading_block_popular_articles white_popular_articles"><strong>Льготы за электроэнергию ветеранам боевых действий в 2019 году</strong></div>
+                            </a>
+                            <div class="content_block_popular_articles white_popular_articles">
+                                Меры господдержки ветеранов боевых действий устанавливаются ст. 16 ФЗ от 12.01.1995 №5-ФЗ.                            </div>
+                            <div class="foot_block_popular_articles blue_foot_block">
+                                <div class="foot_block_eye">
+                                    <img src="img/eye_blue.png" alt="eye">
+                                    156
+                                </div>
+                                <div class="foot_block_clock">
+                                    <img src="img/clock_blue.png" alt="clock">
+                                    4 дня назад
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div id="past_content_popular_month" class="content_popular_articles">
+                        <div class="block_content_popular_articles">
+                            <img class="img_block_content" src="img/block1.png">
+                            <a href="#">
+                                <div class="rubric_popular_articles">
+                                    Компенсации
+                                </div>
+                            </a>
+                            <div class="text_block">
+                                <a href="#">
+                                    <div class="heading_block_popular_articles"><strong>Компенсация за перевод авто на газ</strong></div>
+                                </a>
+                                <div class="content_block_popular_articles">
+                                    Министерством энергетики РФ разработана специальная программа, согласно которой, граждане, установившие ГБО (газобаллонное оборудование) на
+                                </div>
+                                <div class="foot_block_popular_articles">
+                                    <div class="foot_block_eye">
+                                        <img src="img/eye.png" alt="eye">
+                                        156
+                                    </div>
+                                    <div class="foot_block_clock">
+                                        <img src="img/clock.png" alt="clock">
+                                        4 дня назад
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="block_content_popular_articles">
+                            <img class="img_block_content" src="img/block2.png">
+                            <a href="#">
+                                <div class="rubric_popular_articles">
+                                    Субсидии
+                                </div>
+                            </a>
+                            <div class="text_block">
+                                <a href="#">
+                                    <div class="heading_block_popular_articles"><strong>Субсидия за установку шлагбаума в Москве</strong></div>
+                                </a>
+                                <div class="content_block_popular_articles">
+                                    Столичные жители любых многоквартирных домов могут рассчитывать на получение компенсации за установку шлагбаума на
+                                </div>
+                                <div class="foot_block_popular_articles">
+                                    <div class="foot_block_eye">
+                                        <img src="img/eye.png" alt="eye">
+                                        156
+                                    </div>
+                                    <div class="foot_block_clock">
+                                        <img src="img/clock.png" alt="clock">
+                                        4 дня назад
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="block_content_popular_articles">
+                            <img class="img_block_content" src="img/block3.png">
+                            <a href="#">
+                                <div class="rubric_popular_articles">
+                                    Компенсации
+                                </div>
+                            </a>
+                            <div class="text_block">
+                                <a href="#">
+                                    <div class="heading_block_popular_articles white_popular_articles"><strong>Доплата к пенсии работникам сельского хозяйства в 2019 году</strong></div>
+                                </a>
+                                <div class="content_block_popular_articles white_popular_articles">
+                                    Различные льготы на социальные выплаты, а также надбавки к пенсиям получили значительное распространение
+                                </div>
+                                <div class="foot_block_popular_articles white_foot_block">
+                                    <div class="foot_block_eye">
+                                        <img src="img/eye_white.png" alt="eye">
+                                        156
+                                    </div>
+                                    <div class="foot_block_clock">
+                                        <img src="img/clock_white.png" alt="clock">
+                                        4 дня назад
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="block_content_popular_articles">
+                            <img class="img_block_content" src="img/block4.png">
+                            <a href="#">
+                                <div class="rubric_popular_articles">
+                                    Компенсации
+                                </div>
+                            </a>
+                            <div class="text_block">
+                                <a href="#">
+                                    <div class="heading_block_popular_articles"><strong>Льготы на дрова пенсионерам</strong></div>
+                                </a>
+                                <div class="content_block_popular_articles">
+                                    Граждане, которые топят свои жилые помещения исключительно с помощью дров, имеют право рассчитывать на                            </div>
+                                <div class="foot_block_popular_articles">
+                                    <div class="foot_block_eye">
+                                        <img src="img/eye.png" alt="eye">
+                                        156
+                                    </div>
+                                    <div class="foot_block_clock">
+                                        <img src="img/clock.png" alt="clock">
+                                        4 дня назад
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="block_content_popular_articles blue_block_content">
+                            <img class="img_block_content" src="img/block5.png">
+                            <a href="#">
+                                <div class="rubric_popular_articles">
+                                    Компенсации
+                                </div>
+                            </a>
+                            <div class="text_block">
+                                <a href="#">
+                                    <div class="heading_block_popular_articles white_popular_articles"><strong>Льготы за электроэнергию ветеранам боевых действий в 2019 году</strong></div>
+                                </a>
+                                <div class="content_block_popular_articles white_popular_articles">
+                                    Меры господдержки ветеранов боевых действий устанавливаются ст. 16 ФЗ от 12.01.1995 №5-ФЗ.                            </div>
+                                <div class="foot_block_popular_articles blue_foot_block">
+                                    <div class="foot_block_eye">
+                                        <img src="img/eye_blue.png" alt="eye">
+                                        156
+                                    </div>
+                                    <div class="foot_block_clock">
+                                        <img src="img/clock_blue.png" alt="clock">
+                                        4 дня назад
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="block_content_popular_articles">
+                            <img class="img_block_content" src="img/block6.png">
+                            <a href="#">
+                                <div class="rubric_popular_articles">
+                                    Субсидии
+                                </div>
+                            </a>
+                            <div class="text_block">
+                                <a href="#">
+                                    <div class="heading_block_popular_articles white_popular_articles"><strong>Возврат родительской платы за детский сад в Москве в 2019 году</strong></div>
+                                </a>
+                                <div class="content_block_popular_articles white_popular_articles">
+                                    Столичные семьи имеют право на получение компенсации производимой оплаты за посещение их детьми дошкольных                            </div>
+                                <div class="foot_block_popular_articles white_foot_block">
+                                    <div class="foot_block_eye">
+                                        <img src="img/eye_white.png" alt="eye">
+                                        156
+                                    </div>
+                                    <div class="foot_block_clock">
+                                        <img src="img/clock_white.png" alt="clock">
+                                        4 дня назад
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <a href="#">
+                            <button class="btn_questions_hour btn_popular_articles">
+                                Показать все статьи
+                            </button>
+                        </a>
+                    </div>
+                    <button id="btn_popular_articles_month" class="btn_questions_hour btn_popular_articles" onclick="download_more_popular_articles_month()">
+                        Загрузить еще
+                    </button>    
+                </div>
+
+            </div>
+            <div class="latest_articles">
+                <div class="heading_latest_articles">
+                    <div class="item_1_latest_articles">
+                        <img src="img/clock_heading.png" alt="clock">
+                    </div>
+                    <div class="item_2_latest_articles">
+                        <strong>Последние статьи</strong>
+                    </div>
+                </div>
+                <div class="block_latest_articles">
+                    <img src="img/img1.png">
+                    <div class="content_latest_articles">
+                        <div class="icon_time">
+                            <img src="img/time_last.png">
+                            2 часа назад
+                        </div>
+                        <a href="#">
+                            <div class="heading_content_articles">
+                                <strong>Компенсация за аренду автомобиля у сотрудника налогообложение</strong>
+                            </div>
+                        </a>
+                        <div class="text_content_articles">
+                            Не у каждой компании или предпринимателя имеется на балансе автомобиль, который может быть использован
+                        </div>
+                        <div class="icon_content_articles">
+                            <div class="icon_item_art_1">
+                                <img src="img/eye.png">
+                                155
+                            </div>
+                            <div class="icon_item_art_2">
+                                <img src="img/comment.png">
+                                12
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="rubric_latest_articles">
+                            Компенсации
+                        </div>
+                    </a>
+                </div>
+                <div class="block_latest_articles">
+                    <img src="img/img2.png">
+                    <div class="content_latest_articles">
+                        <div class="icon_time">
+                            <img src="img/time_last.png">
+                            2 часа назад
+                        </div>
+                        <a href="#">
+                            <div class="heading_content_articles">
+                                <strong>Программа “Молодая семья” в Тамбове и Тамбовской области в 2019 году (условия, документы, выплаты)</strong>
+                            </div>
+                        </a>
+                        <div class="text_content_articles">
+                            Всероссийская программа «Молодая семья» стала стимулом для аналогичных программных проектов в г. Тамбове и
+                        </div>
+                        <div class="icon_content_articles">
+                            <div class="icon_item_art_1">
+                                <img src="img/eye.png">
+                                155
+                            </div>
+                            <div class="icon_item_art_2">
+                                <img src="img/comment.png">
+                                12
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="rubric_latest_articles">
+                            Компенсации
+                        </div>
+                    </a>
+                </div>
+                <div class="block_latest_articles">
+                    <img src="img/img3.png">
+                    <div class="content_latest_articles">
+                        <div class="icon_time">
+                            <img src="img/time_last.png">
+                            2 часа назад
+                        </div>
+                        <a href="#">
+                            <div class="heading_content_articles">
+                                <strong>Выплаты, доплаты и пособия инвалидам 1 группы в Москве 2019 году</strong>
+                            </div>
+                        </a>
+                        <div class="text_content_articles">
+                            Инвалидность лица устанавливается комиссией МСЭ. В зависимости от состояния здоровья, возможности работы или необходимости
+                        </div>
+                        <div class="icon_content_articles">
+                            <div class="icon_item_art_1">
+                                <img src="img/eye.png">
+                                155
+                            </div>
+                            <div class="icon_item_art_2">
+                                <img src="img/comment.png">
+                                12
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="rubric_latest_articles">
+                            Компенсации
+                        </div>
+                    </a>
+                </div>
+                <div class="block_latest_articles">
+                    <img src="img/img4.png">
+                    <div class="content_latest_articles">
+                        <div class="icon_time">
+                            <img src="img/time_last.png">
+                            2 часа назад
+                        </div>
+                        <a href="#">
+                            <div class="heading_content_articles">
+                                <strong>Прекращение и приостановка выплаты пособия по безработице в 2019 году</strong>
+                            </div>
+                        </a>
+                        <div class="text_content_articles">
+                            Пособие по безработице назначается лицам на период поиска должности для трудоустройства. Выплата производится территориальными
+                        </div>
+                        <div class="icon_content_articles">
+                            <div class="icon_item_art_1">
+                                <img src="img/eye.png">
+                                155
+                            </div>
+                            <div class="icon_item_art_2">
+                                <img src="img/comment.png">
+                                12
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="rubric_latest_articles">
+                            Компенсации
+                        </div>
+                    </a>
+                </div>
+                <div class="block_latest_articles">
+                    <img src="img/img5.png">
+                    <div class="content_latest_articles">
+                        <div class="icon_time">
+                            <img src="img/time_last.png">
+                            2 часа назад
+                        </div>
+                        <a href="#">
+                            <div class="heading_content_articles">
+                                <strong>Пособие по безработице матери одиночке в 2019 году</strong>
+                            </div>
+                        </a>
+                        <div class="text_content_articles">
+                            Пособия по безработице назначают и выплачивают всем неработающим гражданам по единым правилам. Мать—одиночка,
+                        </div>
+                        <div class="icon_content_articles">
+                            <div class="icon_item_art_1">
+                                <img src="img/eye.png">
+                                155
+                            </div>
+                            <div class="icon_item_art_2">
+                                <img src="img/comment.png">
+                                12
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="rubric_latest_articles">
+                            Компенсации
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="block_right">
+            <div class="free_consultation">
+                <div class="heading_free_consultation">
+                    <strong>Бесплатная</strong><p>юридическая консультация</p>
+                </div>
+                <div class="text_free_consultation">
+                    Попали в сложную ситуацию, где требуется квалифицированная помощь юриста? Обратитесь к нашим экспертам, это абсолютно бесплатно Москва и область (круглосуточно)
+                </div>
+                <div class="phone_free_consultation">
+                    <div class="phone_consultation_block">
+                        Для Москвы и МО
+                    </div>
+                    <div class="phone_number">
+                        <div class="phone_nuber_part1">
+                            +7 (499)
+                        </div>
+                        <div class="phone_nuber_part2">
+                            938-80-92
+                        </div>
+                    </div>
+                </div>
+                <div class="phone_free_consultation">
+                    <div class="phone_consultation_block">
+                        Для СПБ и Ленобласти
+                    </div>
+                    <div class="phone_number">
+                        <div class="phone_nuber_part1">
+                            +7 (812)
+                        </div>
+                        <div class="phone_nuber_part2">
+                            467-36-94
+                        </div>
+                    </div>
+                </div>
+                <div class="phone_free_consultation">
+                    <div class="phone_consultation_block">
+                        Для регионов РФ
+                    </div>
+                    <div class="phone_number">
+                        <div class="phone_nuber_part1">
+                            +7 (800)
+                        </div>
+                        <div class="phone_nuber_part2">
+                            350-31-76
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="rubrics">
+                <div class="rubrics_shadow"></div>
+                <div class="heading_rubrics">
+                    <strong>Рубрики</strong>
+                </div>
+                <div class="block_rubrics">
+                    <div class="ellipse">
+                        <img class="icon grey_icon" src="img/ruble.png" alt="ruble">
+                        <img class="icon white_icon" src="img/ruble_white.png" alt="ruble">
+                        <div class="ellipse_shadow"></div>
+                    </div>
+                    <div class="heading_block">
+                        <div class="text_heading">
+                            Компенсации
+                        </div>
+                        <a href="#">
+                            <div class="text_content">
+                                Компенсации
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="text_content">
+                                Компенсации
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="text_content">
+                                Компенсации
+                            </div>
+                        </a>
+                    </div>
+                    <div class="vector_rubrics">
+                        <img src="img/Vector_rubrics.png">
+                    </div>
+                </div>
+                <div class="block_rubrics">
+                    <div class="ellipse">
+                        <img class="icon grey_icon" src="img/portfolio.png" alt="portfolio">
+                        <img class="icon white_icon" src="img/portfolio_white.png" alt="ruble">
+                        <div class="ellipse_shadow"></div>
+                    </div>
+                    <div class="heading_block">
+                        <div class="text_heading">
+                            Трудовые
+                        </div>
+                        <a href="#">
+                            <div class="text_content">
+                                Трудовые
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="text_content">
+                                Трудовые
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="text_content">
+                                Трудовые
+                            </div>
+                        </a>
+                    </div>
+                    <div class="vector_rubrics">
+                        <img src="img/Vector_rubrics.png">
+                    </div>
+                </div>
+                <div class="block_rubrics">
+                    <div class="ellipse">
+                        <img class="icon grey_icon" src="img/mother-with-baby-in-arms.png" alt="mother-with-baby-in-arms">
+                        <img class="icon white_icon" src="img/mother-with-baby-in-arms_white.png" alt="ruble">
+                        <div class="ellipse_shadow"></div>
+                    </div>
+                    <div class="heading_block">
+                        <div class="text_heading">
+                            Детские пособия в регионах
+                        </div>
+                        <a href="#">
+                            <div class="text_content">
+                                Детские пособия в регионах
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="text_content">
+                                Детские пособия в регионах
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="text_content">
+                                Детские пособия в регионах
+                            </div>
+                        </a>
+                    </div>
+                    <div class="vector_rubrics">
+                        <img src="img/Vector_rubrics.png">
+                    </div>
+                </div>
+                <div class="block_rubrics">
+                    <div class="ellipse">
+                        <img class="icon grey_icon" src="img/disability.png" alt="disability">
+                        <img class="icon white_icon" src="img/disability_white.png" alt="ruble">
+                        <div class="ellipse_shadow"></div>
+                    </div>
+                    <div class="heading_block">
+                        <div class="text_heading">
+                            Инвалидам
+                        </div>
+                        <a href="#">
+                            <div class="text_content">
+                                Инвалидам
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="text_content">
+                                Инвалидам
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="text_content">
+                                Инвалидам
+                            </div>
+                        </a>
+                    </div>
+                    <div class="vector_rubrics">
+                        <img src="img/Vector_rubrics.png">
+                    </div>
+                </div>
+                <div class="block_rubrics">
+                    <div class="ellipse">
+                        <img class="icon grey_icon" src="img/military.png" alt="military">
+                        <img class="icon white_icon" src="img/military_white.png" alt="ruble">
+                        <div class="ellipse_shadow"></div>
+                    </div>
+                    <div class="heading_block">
+                        <div class="text_heading">
+                            Военные
+                        </div>
+                        <a href="#">
+                            <div class="text_content">
+                                Военнослужащие
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="text_content">
+                                МВД
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="text_content">
+                                МЧС
+                            </div>
+                        </a>
+                    </div>
+                    <div class="vector_rubrics">
+                        <img src="img/Vector_rubrics.png">
+                    </div>
+                </div>
+                <div class="block_rubrics">
+                    <div class="ellipse">
+                        <img class="icon grey_icon" src="img/teddy-bear.png" alt="teddy-bear">
+                        <img class="icon white_icon" src="img/teddy-bear_white.png" alt="ruble">
+                        <div class="ellipse_shadow"></div>
+                    </div>
+                    <div class="heading_block">
+                        <div class="text_heading">
+                            Детям
+                        </div>
+                        <a href="#">
+                            <div class="text_content">
+                                Детям
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="text_content">
+                                Детям
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="text_content">
+                                Детям
+                            </div>
+                        </a>
+                    </div>
+                    <div class="vector_rubrics">
+                        <img src="img/Vector_rubrics.png">
+                    </div>
+                </div>
+                <div class="block_rubrics">
+                    <div class="ellipse">
+                        <img class="icon grey_icon" src="img/piggy-bank.png" alt="piggy-bank">
+                        <img class="icon white_icon" src="img/piggy-bank_white.png" alt="ruble">
+                        <div class="ellipse_shadow"></div>
+                    </div>
+                    <div class="heading_block">
+                        <div class="text_heading">
+                            Материнский капитал
+                        </div>
+                        <a href="#">
+                            <div class="text_content">
+                                Материнский капитал
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="text_content">
+                                Материнский капитал
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="text_content">
+                                Материнский капитал
+                            </div>
+                        </a>
+                    </div>
+                    <div class="vector_rubrics">
+                        <img src="img/Vector_rubrics.png">
+                    </div>
+                </div>
+            </div>
+            <div class="discussed">
+                <div class="pattern"></div>
+                <div class="discussed_back"></div>
+                <div class="heading_discussed">
+                    Обсуждаемое
+                </div>
+                <div class="block_discussed">
+                    <img src="img/discussed1.png">
+                    <div class="discussed_content">
+                        <a href="#">
+                            <div class="discussed_name">
+                                Как оформить статус матери-одиночки в 2019 году
+                            </div>    
+                        </a>
+                        <div class="discussed_icon">
+                            <div class="icon_item_dis_1">
+                                <img src="img/eye_blue.png">
+                                155
+                            </div>
+                            <div class="icon_item_dis_2">
+                                <img src="img/comment_blue.png">
+                                12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_discussed">
+                    <img src="img/discussed2.png">
+                    <div class="discussed_content">
+                        <a href="#">
+                            <div class="discussed_name">
+                                Декретный отпуск при усыновлении ребенка в 2019 году
+                            </div>    
+                        </a>
+                        <div class="discussed_icon">
+                            <div class="icon_item_dis_1">
+                                <img src="img/eye_blue.png">
+                                155
+                            </div>
+                            <div class="icon_item_dis_2">
+                                <img src="img/comment_blue.png">
+                                12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_discussed">
+                    <img src="img/discussed3.png">
+                    <div class="discussed_content">
+                        <a href="#">
+                            <div class="discussed_name">
+                                Финансирование детских пособий в Волгограде
+                            </div>    
+                        </a>
+                        <div class="discussed_icon">
+                            <div class="icon_item_dis_1">
+                                <img src="img/eye_blue.png">
+                                155
+                            </div>
+                            <div class="icon_item_dis_2">
+                                <img src="img/comment_blue.png">
+                                12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_discussed">
+                    <img src="img/discussed4.png">
+                    <div class="discussed_content">
+                        <a href="#">
+                            <div class="discussed_name">
+                                Какие положены льготы фельдшерам в 2019 году
+                            </div>    
+                        </a>
+                        <div class="discussed_icon">
+                            <div class="icon_item_dis_1">
+                                <img src="img/eye_blue.png">
+                                155
+                            </div>
+                            <div class="icon_item_dis_2">
+                                <img src="img/comment_blue.png">
+                                12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_discussed">
+                    <img src="img/discussed5.png">
+                    <div class="discussed_content">
+                        <a href="#">
+                            <div class="discussed_name">
+                                Как оформить статус матери-одиночки в 2019 году
+                            </div>    
+                        </a>
+                        <div class="discussed_icon">
+                            <div class="icon_item_dis_1">
+                                <img src="img/eye_blue.png">
+                                155
+                            </div>
+                            <div class="icon_item_dis_2">
+                                <img src="img/comment_blue.png">
+                                12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="request_a_call">
+        <div class="filling_request_a_call">
+            <div class="heading_filling">
+                <strong>Заказать обратный звонок для консультации</strong>
+            </div>
+            <div class="subtitle_filling">
+                Заполните форму ниже. С вами свяжутся действующие юристы в течение 15 минут по вашему вопросу
+            </div>
+            <textarea class="text_area_form_question" placeholder="Текст вашего вопроса..."></textarea><br/>
+            <div class="text_filling">
+                Пример: Набрал займов в МФО из-за ремонта квартиры и лечения болезни. Поздно понял что это неподъемные займы для меня. Звонят, угрожают различными способами воздействия. Как быть?
+            </div>
+            <div class="footer_filling">
+                <button class="btn_filling" onclick="vailability_check()">
+                    <strong>Задать вопрос</strong>
+                </button>
+                <div id="check" checked="false" onclick="check_license_agreement()">
+                    <div id="check_mark">&#10003;</div>
+                </div>
+                <div id="license_agreement">
+                    Нажимая кнопку «Задать вопрос», вы принимаете условия Политики обработки персональных данных.
+                </div>
+            </div>
+            <div class="man_filling">
+                <img src="img/man.png" alt="man">
+            </div>
+            <div class="pat_filling">
+                <img src="img/pattern2.png">
+            </div>
+        </div>
+    </div>
+    <div class="how_we_are_working">
+        <div class="heading_working">
+            <strong>Как мы работаем</strong>
+        </div>
+        <div class="icon_working">
+            <img src="img/icon1.png">
+            <img src="img/icon2.png">
+            <img src="img/icon3.png">
+        </div>
+        <img class="scale_how" src="img/scale.png" alt="scale">
+        <div class="content_working">
+            <div class="item_working item-1">
+                <div class="item_heading">
+                    <strong>Задайте вопрос</strong>
+                </div>
+                <div class="item_filling">
+                    Мы получаем более 1500 вопросов каждый день. Задайте свой!
+                </div>
+            </div>
+            <div class="item_working item-2">
+                <div class="item_heading">
+                    <strong>Получите ответы</strong>
+                </div>
+                <div class="item_filling">
+                    На вопросы круглосуточно отвечают юристы со всей России. Среднее время ответа 15 минут
+                </div>
+            </div>
+            <div class="item_workin item-3">
+                <div class="item_heading">
+                    <strong>Проблема решена!</strong>
+                </div>
+                <div class="item_filling">
+                    95,4% процента клиентов остаются довольны ответами и рекомендуют нас друзьям
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="in_numbers">
+        <div class="block_in_numbers num_block1">
+            <div class="shadow_block_in_numbers"></div>
+            <img src="img/block_num1.png">
+            <div class="numbers">
+                <div class="heading_num">
+                    <strong>497</strong>
+                </div>
+                <div class="text_num">
+                    вопросов сегодня
+                </div>
+            </div>
+        </div>
+        <div class="block_in_numbers num_block2">
+            <div class="shadow_block_in_numbers"></div>
+            <img src="img/block_num2.png">
+            <div class="numbers">
+                <div class="heading_num">
+                    <strong>102</strong>
+                </div>
+                <div class="text_num">
+                    юристов онлайн
+                </div>
+            </div>
+        </div>
+        <div class="block_in_numbers num_block3">
+            <div class="shadow_block_in_numbers"></div>
+            <img src="img/block_num3.png">
+            <div class="numbers">
+                <div class="heading_num">
+                    <strong>95,4</strong>
+                </div>
+                <div class="text_num">
+                    рекомендуют нас друзьям
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="share">
+        <div class="share_block vk_block">
+            <div class="share_icon">
+                <img src="img/vk_block.png" alt="vk">
+            </div>
+            <div class="share_num">
+                11
+            </div>
+            <div class="vert_line"></div>
+        </div>
+        <div class="share_block f_block">
+            <div class="share_icon">
+                <img src="img/f_block.png" alt="f">
+            </div>
+            <div class="share_num">
+                114
+            </div>
+            <div class="vert_line"></div>
+        </div>
+        <div class="share_block tw_block">
+            <div class="share_icon">
+                <img src="img/tw_block.png" alt="twitter">
+            </div>
+            <div class="share_num">
+                11
+            </div>
+            <div class="vert_line"></div>
+        </div>
+        <div class="share_block odnoklassniki_block">
+            <div class="share_icon">
+                <img src="img/odnoklassniki_block.png" alt="odnoklassniki">
+            </div>
+            <div class="share_num">
+                11
+            </div>
+            <div class="vert_line"></div>
+        </div>
+    </div>
+    <div class="watching_right_now">
+        <div class="heading_watching">
+            <strong>Прямо сейчас смотрят</strong>
+        </div>
+        <div class="content_watching">
+            <div class="block_watching">
+                <img src="img/photo_watch1.png">
+                <a href="#">
+                    <div class="heading_block">
+                        <strong>Права многодетной матери на работе по ТК РФ в 2019 году</strong>
+                    </div> 
+                </a>
+                <div class="icon_content_articles">
+                    <div class="icon_item_art_1">
+                        <img src="img/eye.png">
+                        155
+                    </div>
+                    <div class="icon_item_art_2">
+                        <img src="img/comment.png">
+                        12
+                    </div>
+                </div>
+            </div>
+            <div class="block_watching">
+                <img src="img/photo_watch2.png">
+                <a href="#">
+                    <div class="heading_block">
+                        <strong>Какие установлены льготы пожарной охраны в 2019 году</strong>
+                    </div> 
+                </a>
+                <div class="icon_content_articles">
+                    <div class="icon_item_art_1">
+                        <img src="img/eye.png">
+                        155
+                    </div>
+                    <div class="icon_item_art_2">
+                        <img src="img/comment.png">
+                        12
+                    </div>
+                </div>
+            </div>
+            <div class="block_watching">
+                <img src="img/photo_watch3.png">
+                <a href="#">
+                    <div class="heading_block">
+                        <strong>Какие положены льготы шахтерам в 2019 году</strong>
+                    </div> 
+                </a>
+                <div class="icon_content_articles">
+                    <div class="icon_item_art_1">
+                        <img src="img/eye.png">
+                        155
+                    </div>
+                    <div class="icon_item_art_2">
+                        <img src="img/comment.png">
+                        12
+                    </div>
+                </div>
+            </div>
+            <div class="block_watching">
+                <img src="img/photo_watch4.png">
+                <a href="#">
+                    <div class="heading_block">
+                        <strong>Какие положены льготы шахтерам в 2019 году</strong>
+                    </div> 
+                </a>
+                <div class="icon_content_articles">
+                    <div class="icon_item_art_1">
+                        <img src="img/eye.png">
+                        155
+                    </div>
+                    <div class="icon_item_art_2">
+                        <img src="img/comment.png">
+                        12
+                    </div>
+                </div>
+            </div>
+            <div class="block_watching">
+                <img src="img/photo_watch5.png">
+                <a href="#">
+                    <div class="heading_block">
+                        <strong>Компенсация за первоклассника многодетным семьям в 2019 году</strong>
+                    </div> 
+                </a>
+                <div class="icon_content_articles">
+                    <div class="icon_item_art_1">
+                        <img src="img/eye.png">
+                        155
+                    </div>
+                    <div class="icon_item_art_2">
+                        <img src="img/comment.png">
+                        12
+                    </div>
+                </div>
+            </div>
+            <div class="block_watching">
+                <img src="img/photo_watch6.png">
+                <a href="#">
+                    <div class="heading_block">
+                        <strong>Льготы родителям ребенка-инвалида в 2019 году</strong>
+                    </div> 
+                </a>
+                <div class="icon_content_articles">
+                    <div class="icon_item_art_1">
+                        <img src="img/eye.png">
+                        155
+                    </div>
+                    <div class="icon_item_art_2">
+                        <img src="img/comment.png">
+                        12
+                    </div>
+                </div>
+            </div>
+            <div class="block_watching">
+                <img src="img/photo_watch7.png">
+                <a href="#">
+                    <div class="heading_block">
+                        <strong>Единовременная выплата при рождении ребенка в чернобыльской зоне</strong>
+                    </div> 
+                </a>
+                <div class="icon_content_articles">
+                    <div class="icon_item_art_1">
+                        <img src="img/eye.png">
+                        155
+                    </div>
+                    <div class="icon_item_art_2">
+                        <img src="img/comment.png">
+                        12
+                    </div>
+                </div>
+            </div>
+            <div class="block_watching">
+                <img src="img/photo_watch8.png">
+                <a href="#">
+                    <div class="heading_block">
+                        <strong>Единовременная выплата при рождении ребенка в чернобыльской зоне</strong>
+                    </div> 
+                </a>
+                <div class="icon_content_articles">
+                    <div class="icon_item_art_1">
+                        <img src="img/eye.png">
+                        155
+                    </div>
+                    <div class="icon_item_art_2">
+                        <img src="img/comment.png">
+                        12
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="phons_background">
+            <div class="phons foot_phones">
+                <div class="free_line">
+                    Бесплатная консультация<br/>Свободных юристов: 5
+                </div>
+                <div class="phon_1">
+                    <div class="block_1">
+                        <div class="blocks_text">Для Москвы и МО</div>
+                    </div>
+                    <div class="numder_1">
+                        +7 (499) 938-80-92
+                    </div>
+                </div>
+                <div class="phon_2">
+                    <div class="block_2">
+                        <div class="blocks_text">Для СПБ и Ленобласти</div>
+                    </div>
+                    <div class="numder_2">
+                        +7 (812) 467-36-94
+                    </div>
+                </div>
+                <div class="phon_3">
+                    <div class="block_3">
+                        <div class="blocks_text">Для Регионов РФ</div>
+                    </div>
+                    <div class="numder_3">
+                        +7 (800) 350-31-76
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer_backgraund">
+            <div class="citis">
+                <div class="heading_citis">
+                    <strong>Города где мы работаем:</strong>
+                </div>
+                <div class="citis_citis">
+                    <div class="items_citis">
+                        <div class="city icon_city"><img class="icon_city_grey" src="img/icon_city.png"><img class="icon_city_white" src="img/icon_city_white.png"> Адыгейск</div>
+                        <div class="city">Архангельск</div>
+                        <div class="city">Белгород</div>
+                        <div class="city">Благовещенстк</div>
+                        <div class="city">Брянск</div>
+                        <div class="city">Великий Новгород</div>
+                        <div class="city">Владимир</div>
+                        <div class="city">Волгоград</div>
+                    </div>
+                    <div class="items_citis">
+                        <div class="city icon_city"><img class="icon_city_grey" src="img/icon_city.png"><img class="icon_city_white" src="img/icon_city_white.png"> Вологда</div>
+                        <div class="city">Воронеж</div>
+                        <div class="city">Екатеринбург</div>
+                        <div class="city">Ижевск</div>
+                        <div class="city">Казань</div>
+                        <div class="city">Калининград</div>
+                        <div class="city">Кемерово</div>
+                        <div class="city">Краснодар</div>
+                    </div>
+                    <div class="items_citis">
+                        <div class="city icon_city"><img class="icon_city_grey" src="img/icon_city.png"><img class="icon_city_white" src="img/icon_city_white.png"> Краснаярск</div>
+                        <div class="city">Курск</div>
+                        <div class="city">Липецк</div>
+                        <div class="city">Москва</div>
+                        <div class="city">Москва=2</div>
+                        <div class="city">Набережные челны</div>
+                        <div class="city">Нальчик</div>
+                        <div class="city">Нижний Новгород</div>
+                    </div>
+                    <div class="items_citis">
+                        <div class="city icon_city"><img class="icon_city_grey" src="img/icon_city.png"><img class="icon_city_white" src="img/icon_city_white.png"> Новосибирск</div>
+                        <div class="city">Омск</div>
+                        <div class="city">Пенза</div>
+                        <div class="city">Пермь</div>
+                        <div class="city">Ростов-на-Дону</div>
+                        <div class="city">Рязань</div>
+                        <div class="city">Самара</div>
+                        <div class="city">Санкт-Петербург</div>
+                        <div class="city">Саранск</div>
+                    </div>
+                    <div class="items_citis">
+                        <div class="city icon_city"><img class="icon_city_grey" src="img/icon_city.png"><img class="icon_city_white" src="img/icon_city_white.png"> Саратов</div>
+                        <div class="city">Ставрополь</div>
+                        <div class="city">Тверь</div>
+                        <div class="city">Тула</div>
+                        <div class="city">Тюмень</div>
+                        <div class="city">Ульяновск</div>
+                        <div class="city">Уфа</div>
+                        <div class="city">Челябинск</div>
+                        <div class="city">Ярославль</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_filling">
+                <div class="logo">
+                    <img src="img/logo_footer.png" alt="logo">
+                    <div class="logo_text">© 2019 Юридическая консультация в Москве При использовании материалов сайта, ссылка на сайт обязательна</div>
+                </div>
+                <div class="nav_footer">
+                    <a href="#"><div class="nav_item_footer">Компенсации</div></a>
+                    <a href="#"><div class="nav_item_footer">Трудовые</div></a>
+                    <a href="#"><div class="nav_item_footer">Детские пособия в регионах</div></a>
+                    <a href="#"><div class="nav_item_footer">Инвалидам</div></a>
+                    <a href="#"><div class="nav_item_footer">Военнослужащим</div></a>
+                    <a href="#"><div class="nav_item_footer">Детям</div></a>
+                    <a href="#"><div class="nav_item_footer">Материнский капитал</div></a>
+                </div>
+                <div class="icons_footer">
+                    <img src="img/icons_footer.png">
+                </div>
+                <div class="hot_line hot_line_mobile">
+                    <div class="text_hot_line">Горячая линия:</div>
+                    <div class="number_hot_line hot_footer">+7 (800) 350-31-76</div>
+                    <button class="btn_hot_line myLinkModal">Заказать звонок</button>
+                    <div class="links">
+                        <div class="link">
+                            <img src="img/footer_f_grey.png" alt="f">
+                        </div>
+                        <div class="link">
+                            <img src="img/footer_vk_grey.png" alt="vk">
+                        </div>
+                        <div class="link">
+                            <img src="img/footer_odno_grey.png" alt="odnoklassniki">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about_nav">
+                    <a href="#"><div class="item_about">О сайте</div></a>
+                    <a href="#"><div class="item_about">Редакция</div></a>
+                    <a href="#"><div class="item_about">Контакты</div></a>
+                    <a href="#"><div class="item_about">Политика конфиденсальностиии</div></a>    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+
+</body>
+</html>

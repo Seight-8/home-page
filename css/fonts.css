@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../font/ProximaNova/ProximaNova-Regular.eot");
+    src: url("../font/ProximaNova/ProximaNova-Regular.eot?#iefix")format("embedded-opentype");
+    src: url("../font/ProximaNova/ProximaNova-Regular.woff")format("woff");
+    src: url("../font/ProximaNova/ProximaNova-Regular.ttf")format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/montserrat/Montserrat-Regular.eot");
+    src: url("../font/montserrat/Montserrat-Regular.eot?#iefix")format("embedded-opentype");
+    src: url("../font/montserrat/Montserrat-Regular.woff")format("woff");
+    src: url("../font/montserrat/Montserrat-Regular.ttf")format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

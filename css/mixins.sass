@@ -1,0 +1,57 @@
+@mixin phons($wth, $mr)
+    width: $wth
+    height: 30px
+    margin-right: $mr
+    display: flex
+    
+@mixin blocks($wth)
+    background: #608CFF
+    border-radius: 7px
+    width: $wth
+    height: 30px
+    @media ( max-width:  1024px)
+        height: 40px
+    @media ( max-width:  736px)
+        height: 30px
+
+
+@mixin numbers ($mr_l)
+    font-size: 16px
+    line-height: 19px
+    color: #fff
+    margin-left: $mr_l
+    margin-top: 8px
+    @media ( max-width:  1024px)
+        font-size: 20px
+        margin-top: 10px
+    @media ( max-width:  736px)
+        font-size: 16px
+        margin-top: 8px
+
+
+@mixin rubric ($top, $left)
+    position: absolute
+    top: $top
+    left: $left
+    font-size: 15px
+    line-height: 21px
+    color: #FFFFFF
+    background: #FE7B79
+    border-radius: 7px
+    padding: 4.5px 9px
+
+@mixin centering
+    position: absolute
+    top: 50%
+    transform: translate( 0, -50%)
+
+@mixin icon
+    .icon_content_articles
+        display: flex
+        font-size: 14px
+        line-height: 21px
+        color: #848DA8
+        .icon_item_art_1
+            margin-right: 11px
+
+    
